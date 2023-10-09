@@ -1,13 +1,7 @@
 import React from "react";
 import MembershipCard from "./MembershipCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  EffectCoverflow,
-  Scrollbar,
-  A11y,
-} from "swiper/modules";
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 
 import "swiper/css/effect-fade";
 import "swiper/css";
@@ -56,7 +50,6 @@ const MembershipPlanPage = () => {
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-          clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container !rounded-[16px]"
