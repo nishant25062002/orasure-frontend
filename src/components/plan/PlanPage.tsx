@@ -6,20 +6,9 @@ import MembershipPlanPage from "./membership/MembershipPlanPage";
 import HealthPlanPage from "../plan/health/HealthPlanPage";
 
 const PlanPage = () => {
-  const tabData = [
-    {
-      label: "Membership Plan",
-      path: "/plans/membership-plan",
-    },
-    {
-      label: "Dental Health Plan",
-      path: "/plans/dental-health-plan",
-    },
-  ];
   return (
-    <div className="">
+    <div className="bg-gradient-to-b from-[#EAF3F8] via-[rgba(234,243,248,0.00)] to-transparent">
       <Header />
-      <TabHeader data={tabData} />
       <Routes>
         <Route path="/membership-plan" element={<MembershipPlanPage />} />
         <Route path="/dental-health-plan" element={<HealthPlanPage />} />

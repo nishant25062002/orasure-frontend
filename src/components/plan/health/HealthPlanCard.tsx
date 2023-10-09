@@ -2,7 +2,7 @@ import React from "react";
 import Divider from "../../global/Divider";
 import CheckIcon from "../../../assets/global/Check.svg";
 
-const MembershipCard = ({ data }: any) => {
+const HealthPlanCard = () => {
   const dataS = {
     name: "Enamel Member Plan",
     monthPrice: 2990,
@@ -11,47 +11,42 @@ const MembershipCard = ({ data }: any) => {
   };
 
   return (
-    <div className="rounded-[16px] bg-[#9EC55B] w-[281px] h-[250px] p-[20px] shadow-sm">
-      <div className="text-[#000] text-[14px] font-[700] leading-[14px] uppercase">
+    <div className="rounded-[16px] bg-[#fff] w-[100%] max-w-[350%] h-[250px] p-[20px] border-[1px] border-[#9EC55B]  my-[8px]">
+      <div className="text-[#9EC55B] text-[14px] font-[700] leading-[14px] uppercase">
         {dataS.name}
       </div>
       <div className="flex pt-[12px] justify-between">
-        <div className="text-[#fff] text-[24px] font-[700] leading-[24px]">
+        <div className="text-[#222] text-[24px] font-[700] leading-[24px]">
           ₹{2990}
           <span className="text-[12px] font-[500]">/Year</span>
         </div>
-        <div className="text-[#fff] text-[24px] font-[700] leading-[24px]">
+        <div className="text-[#222] text-[24px] font-[700] leading-[24px]">
           ₹{299}
           <span className="text-[12px] font-[500]">/Month</span>
         </div>
       </div>
-      <Divider customStyle={"h-[0.5px] w-full bg-[#fff] mt-[8px] mb-[17px]"} />
+      <Divider
+        customStyle={"h-[0.5px] w-full bg-[#D9D9D9] mt-[8px] mb-[17px]"}
+      />
       <div>
         <div className="text-[#222] text-[16px] font-[600] leading-[16px] mb-[16px]">
           This Plan Includes :
         </div>
         <div className="text-[#222] text-[12px] font-[600] leading-[12px] mb-[17px] flex gap-[10px]">
           <img src={CheckIcon} alt="check" className="h-[12.5px] w-[12.5px]" />
-          <div>
-            <span className="text-[#fff] ">1 Year </span>Plan Period
-          </div>
+          <div>1 Year Plan Period</div>
         </div>
         <div className="text-[#222] text-[12px] font-[600] leading-[12px] mb-[17px] flex gap-[10px]">
           <img src={CheckIcon} alt="check" className="h-[12.5px] w-[12.5px]" />
-          <div>
-            Max Benefits upto <span className="text-[#fff] ">₹6830</span>
-          </div>
+          <div>Max Benefits upto ₹6830</div>
         </div>
         <div className="text-[#222] text-[12px] font-[600] leading-[12px] flex gap-[10px]">
           <img src={CheckIcon} alt="check" className="h-[12.5px] w-[12.5px]" />
-          <div>
-            {" "}
-            Discount of <span className="text-[#fff] ">10% on Service</span>
-          </div>
+          <div> Discount of 10% on Service</div>
         </div>
       </div>
     </div>
   );
 };
 
-export default MembershipCard;
+export default HealthPlanCard;

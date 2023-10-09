@@ -36,7 +36,7 @@ const MembershipCardDetail = () => {
       <div className="mt-[33px] mb-[13px] text-center text-[#444] text-[20px] font-[700] ">
         Plan Benefits
       </div>
-      <div className="max-w-[330px] w-[99%] rounded-[16px] border-[1px] border-[#9EC55B] py-[24px]">
+      <div className="max-w-[350px] w-[98%] rounded-[16px] border-[1px] border-[#9EC55B] py-[24px]">
         <div className="p-[0_22px]">
           <div className="text-[#222] text-[16px] font-[600] leading-[16px] mb-[16px]">
             This Plan Includes :

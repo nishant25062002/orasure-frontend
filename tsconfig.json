@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "target": "ES6",
     "module": "CommonJS",
     "strict": true,
@@ -8,6 +10,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.svg"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "svg.d.ts"],
   "exclude": ["node_modules"]
 }

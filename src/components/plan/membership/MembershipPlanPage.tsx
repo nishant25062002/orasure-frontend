@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./Membership.css";
 import MembershipCardDetail from "./MembershipCardDetail";
+import TabHeader from "../../global/TabHeader";
 
 const MembershipPlanPage = () => {
   const data = [
@@ -32,37 +33,52 @@ const MembershipPlanPage = () => {
       name: "Premium Member Plan",
     },
   ];
+
+  const tabData = [
+    {
+      label: "Membership Plan",
+      path: "/plans/membership-plan",
+    },
+    {
+      label: "Dental Health Plan",
+      path: "/plans/dental-health-plan",
+    },
+  ];
+
   return (
-    <div className=" mt-[34px] mx-[8px]">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        // loop={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container !rounded-[16px]"
-      >
-        {data.map(() => (
-          <SwiperSlide className="w-[281px] !rounded-[16px]">
-            <MembershipCard />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/* card details  */}
-      <MembershipCardDetail />
-    </div>
+    <>
+      <TabHeader data={tabData} />
+      <div className=" mt-[34px] mx-[8px]">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          // loop={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          pagination={{ el: ".swiper-pagination", clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="swiper_container !rounded-[16px]"
+        >
+          {data.map(() => (
+            <SwiperSlide className="w-[281px] !rounded-[16px]">
+              <MembershipCard />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {/* card details  */}
+        <MembershipCardDetail />
+      </div>
+    </>
   );
 };
 

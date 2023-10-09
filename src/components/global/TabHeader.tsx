@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-interface TabData {
-  tab: {
-    label: string;
-    path: string;
-  };
-}
-
 interface TabHeaderProps {
-  data: TabData[];
+  data: [
+    tab: {
+      label: string;
+      path: string;
+    }
+  ];
 }
 
 const TabHeader = ({ data }: TabHeaderProps) => {
