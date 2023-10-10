@@ -10,7 +10,7 @@ const PlanPage = () => {
     <div className="bg-gradient-to-b from-[#EAF3F8] via-[rgba(234,243,248,0.00)] to-transparent">
       <Header />
       <Routes>
-        <Route path="/membership-plan" element={<MembershipPlanPage />} />
+        <Route path="/" element={<MembershipPlanPage />} />
         <Route path="/dental-health-plan" element={<HealthPlanPage />} />
       </Routes>
     </div>

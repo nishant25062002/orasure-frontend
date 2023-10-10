@@ -6,7 +6,7 @@ const HealthPlanPage = () => {
   return (
     <div className="mx-[16px]">
       <div className="mb-[20px]">
-        <SearchBar />
+        <SearchBar filter />
       </div>
       <HealthPlanCard />
       <HealthPlanCard />

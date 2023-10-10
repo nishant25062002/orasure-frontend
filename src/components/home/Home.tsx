@@ -9,11 +9,11 @@ const Home = () => {
   const tabData = [
     {
       label: "Membership Plan",
-      path: "/membership-plan",
+      path: "/plans/membership-plan",
     },
     {
       label: "Dental Health Plan",
-      path: "/dental-health-plan",
+      path: "/plans/dental-health-plan",
     },
   ];
   return (

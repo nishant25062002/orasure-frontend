@@ -37,7 +37,7 @@ const MembershipPlanPage = () => {
   const tabData = [
     {
       label: "Membership Plan",
-      path: "/plans/membership-plan",
+      path: "/plans",
     },
     {
       label: "Dental Health Plan",

@@ -14,10 +14,6 @@ const TabHeader = ({ data }: TabHeaderProps) => {
   const [activeTab, setActiveTab] = useState(0);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    navigate(data[0].path);
-  }, []);
-
   return (
     <div className="mx-[17px] flex p-[5px] gap-[9px] rounded-[42px] bg-[rgba(158,197,91,0.30)]">
       {data.map((tabData, index) => (
