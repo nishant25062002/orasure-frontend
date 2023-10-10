@@ -33,7 +33,7 @@ const Header = () => {
           />
         </div>
       </div>
-      {show && <Sidebar show />}
+      {show && <Sidebar show setShow={setShow} />}
     </>
   );
 };
