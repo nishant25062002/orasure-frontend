@@ -2,11 +2,11 @@ import React from "react";
 import Button from "@mui/material/Button";
 
 const CustomButton = ({
-  customStyle,
+  customStyle = "",
   text,
   cancel = false,
 }: {
-  customStyle: string;
+  customStyle?: string;
   text: string;
   cancel?: boolean;
 }) => {
