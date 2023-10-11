@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Divider from "../global/Divider";
 import CustomButton from "../global/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const ServiceList = () => {
+  const navigate = useNavigate();
   const services = [
     {
       item: "Routine Checkup",
@@ -109,6 +111,7 @@ const ServiceList = () => {
         <CustomButton
           customStyle="w-full shadow-[0px_2px15px_0px_rgba(0,0,0,0.15)]"
           text={"PROCEED"}
+          clickfunction={() => navigate("/payment")}
         />
       </div>
     </div>

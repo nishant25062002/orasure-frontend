@@ -1,8 +1,11 @@
 import React from "react";
 import Divider from "../../global/Divider";
 import CheckIcon from "../../../assets/global/Check.svg";
+import { useNavigate } from "react-router-dom";
 
 const HealthPlanCard = () => {
+  const navigate = useNavigate();
+
   const dataS = {
     name: "Enamel Member Plan",
     monthPrice: 2990,
@@ -11,7 +14,10 @@ const HealthPlanCard = () => {
   };
 
   return (
-    <div className="rounded-[16px] bg-[#fff] w-[100%] max-w-[350%] h-[250px] p-[20px] border-[1px] border-[#9EC55B]  my-[8px]">
+    <div
+      className="rounded-[16px] bg-[#fff] w-[100%] max-w-[350%] h-[250px] p-[20px] border-[1px] border-[#9EC55B]  my-[8px]"
+      onClick={() => navigate("/treatment")}
+    >
       <div className="text-[#9EC55B] text-[14px] font-[700] leading-[14px] uppercase">
         {dataS.name}
       </div>

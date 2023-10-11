@@ -5,10 +5,12 @@ const CustomButton = ({
   customStyle = "",
   text,
   cancel = false,
+  clickfunction = () => {},
 }: {
   customStyle?: string;
   text: string;
   cancel?: boolean;
+  clickfunction?: any;
 }) => {
   var customData = {
     customBg: "#9EC55B",
@@ -25,6 +27,7 @@ const CustomButton = ({
   return (
     <div className={customStyle}>
       <Button
+        onClick={clickfunction}
         variant={"contained"}
         style={{
           backgroundColor: customData.customBg,

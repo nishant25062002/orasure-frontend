@@ -5,8 +5,11 @@ import Cart from "../../assets/header/Cart.svg";
 import Menu from "../../assets/header/Menu.svg";
 import Cross from "../../assets/header/Cross.svg";
 import Sidebar from "./Sidebar";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -22,10 +25,18 @@ const Header = () => {
   return (
     <>
       <div className="flex p-[27px_16px_31px_16px] justify-between items-center h-fit bg-[#ECF4F9] !z-[100]">
-        <img src={Logo} className="w-[148px] h-[33.57px]" />
+        <img
+          src={Logo}
+          className="w-[148px] h-[33.57px]"
+          onClick={() => navigate("/plans")}
+        />
         <div className="flex gap-[22px]">
           <img src={Cart} className="h-[20px] w-[20px]" />
-          <img src={Account} className="h-[20px] w-[20px]" />
+          <img
+            src={Account}
+            className="h-[20px] w-[20px]"
+            onClick={() => navigate("/detail-form")}
+          />
           <img
             src={show ? Cross : Menu}
             className="h-[20px] w-[20px]"

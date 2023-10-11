@@ -51,6 +51,7 @@ const Sidebar = ({
             </div>
           </div>
         ))}
+        <Divider customStyle="bg-[#D9D9D9] h-[0.5px] w-full" />
       </div>
       {/* {show && (
         <div className="fixed h-[100%] w-full top-[350px] bg-[rgba(0,0,0,0.30)]" />

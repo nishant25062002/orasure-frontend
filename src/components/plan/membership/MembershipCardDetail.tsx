@@ -2,8 +2,11 @@ import React from "react";
 import CheckIcon from "../../../assets/global/Check.svg";
 import CustomButton from "../../global/CustomButton.tsx";
 import Divider from "../../global/Divider";
+import { useNavigate } from "react-router-dom";
 
 const MembershipCardDetail = () => {
+  const navigate = useNavigate();
+
   const data = [
     {
       service: "Routine Checkup",
@@ -125,7 +128,11 @@ const MembershipCardDetail = () => {
             <Divider customStyle={"mt-[12px] mb-[30px] !h-[1px] bg-[#888]"} />
           </div>
           {/* buttons */}
-          <CustomButton customStyle={"w-full mb-[16px]"} text={"Apply now"} />
+          <CustomButton
+            customStyle={"w-full mb-[16px]"}
+            text={"Apply now"}
+            clickfunction={() => navigate("/treatment")}
+          />
           <CustomButton customStyle={"w-full "} text={"Compare Plans"} cancel />
         </div>
       </div>
