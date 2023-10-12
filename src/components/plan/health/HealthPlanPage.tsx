@@ -1,19 +1,29 @@
 import React from "react";
-import SearchBar from "../../global/SearchBar";
-import HealthPlanCard from "./HealthPlanCard";
+import SliderPage from "../cards/SliderPage";
 
 const HealthPlanPage = () => {
-  return (
-    <div className="mx-[16px]">
-      <div className="mb-[20px]">
-        <SearchBar filter />
-      </div>
-      <HealthPlanCard />
-      <HealthPlanCard />
-      <HealthPlanCard />
-      <HealthPlanCard />
-    </div>
-  );
+  const data = [
+    {
+      name: "Enamel Member Plan",
+    },
+    {
+      name: "Second Member Plan",
+    },
+    {
+      name: "Premium Member Plan",
+    },
+    {
+      name: "Enamel Member Plan",
+    },
+    {
+      name: "Second Member Plan",
+    },
+    {
+      name: "Premium Member Plan",
+    },
+  ];
+
+  return <SliderPage isHeading data={data} />;
 };
 
 export default HealthPlanPage;

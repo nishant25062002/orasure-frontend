@@ -2,7 +2,7 @@ import React from "react";
 import Divider from "../../global/Divider";
 import CheckIcon from "../../../assets/global/Check.svg";
 
-const MembershipCard = ({ data }: any) => {
+const SliderCard = ({ data }: any) => {
   const dataS = {
     name: "Enamel Member Plan",
     monthPrice: 2990,
@@ -54,4 +54,4 @@ const MembershipCard = ({ data }: any) => {
   );
 };
 
-export default MembershipCard;
+export default SliderCard;

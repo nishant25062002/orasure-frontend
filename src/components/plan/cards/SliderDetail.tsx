@@ -4,7 +4,7 @@ import CustomButton from "../../global/CustomButton.tsx";
 import Divider from "../../global/Divider";
 import { useNavigate } from "react-router-dom";
 
-const MembershipCardDetail = () => {
+const SliderDetail = ({ isMembership }: { isMembership: boolean }) => {
   const navigate = useNavigate();
 
   const data = [
@@ -40,43 +40,45 @@ const MembershipCardDetail = () => {
         Plan Benefits
       </div>
       <div className="max-w-[350px] w-[98%] rounded-[16px] border-[1px] border-[#9EC55B] py-[24px]">
-        <div className="p-[0_22px]">
-          <div className="text-[#222] text-[16px] font-[600] leading-[16px] mb-[16px]">
-            This Plan Includes :
-          </div>
-          <div className="text-[#555] text-[14px] font-[600] leading-[16px] mb-[17px] gap-[10px] flex items-center">
-            <img
-              src={CheckIcon}
-              alt="check"
-              className="h-[12.5px] w-[12.5px]"
-            />
-            <div>
-              <span className="text-[#146EB7] ">1 Year </span>Plan Period
+        {isMembership && (
+          <div className="p-[0_22px]">
+            <div className="text-[#222] text-[16px] font-[600] leading-[16px] mb-[16px]">
+              This Plan Includes :
+            </div>
+            <div className="text-[#555] text-[14px] font-[600] leading-[16px] mb-[17px] gap-[10px] flex items-center">
+              <img
+                src={CheckIcon}
+                alt="check"
+                className="h-[12.5px] w-[12.5px]"
+              />
+              <div>
+                <span className="text-[#146EB7] ">1 Year </span>Plan Period
+              </div>
+            </div>
+            <div className="text-[#555] text-[14px] font-[600] leading-[16px] mb-[17px] flex gap-[10px] items-center">
+              <img
+                src={CheckIcon}
+                alt="check"
+                className="h-[12.5px] w-[12.5px]"
+              />
+              <div>
+                Max Benefits upto <span className="text-[#146EB7] ">₹6830</span>
+              </div>
+            </div>
+            <div className="text-[#555] text-[14px] font-[600] leading-[16px] flex gap-[10px] items-center">
+              <img
+                src={CheckIcon}
+                alt="check"
+                className="h-[12.5px] w-[12.5px]"
+              />
+              <div>
+                {" "}
+                Discount of{" "}
+                <span className="text-[#146EB7] ">10% on Service</span>
+              </div>
             </div>
           </div>
-          <div className="text-[#555] text-[14px] font-[600] leading-[16px] mb-[17px] flex gap-[10px] items-center">
-            <img
-              src={CheckIcon}
-              alt="check"
-              className="h-[12.5px] w-[12.5px]"
-            />
-            <div>
-              Max Benefits upto <span className="text-[#146EB7] ">₹6830</span>
-            </div>
-          </div>
-          <div className="text-[#555] text-[14px] font-[600] leading-[16px] flex gap-[10px] items-center">
-            <img
-              src={CheckIcon}
-              alt="check"
-              className="h-[12.5px] w-[12.5px]"
-            />
-            <div>
-              {" "}
-              Discount of{" "}
-              <span className="text-[#146EB7] ">10% on Service</span>
-            </div>
-          </div>
-        </div>
+        )}
         <div className="p-[0_13px]">
           <div className="mt-[38px]">
             <div className="flex mb-[22px]">
@@ -140,4 +142,4 @@ const MembershipCardDetail = () => {
   );
 };
 
-export default MembershipCardDetail;
+export default SliderDetail;

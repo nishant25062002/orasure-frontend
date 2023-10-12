@@ -3,7 +3,7 @@ import Divider from "../../global/Divider";
 import CheckIcon from "../../../assets/global/Check.svg";
 import { useNavigate } from "react-router-dom";
 
-const HealthPlanCard = () => {
+const CompareCard = () => {
   const navigate = useNavigate();
 
   const dataS = {
@@ -55,4 +55,4 @@ const HealthPlanCard = () => {
   );
 };
 
-export default HealthPlanCard;
+export default CompareCard;

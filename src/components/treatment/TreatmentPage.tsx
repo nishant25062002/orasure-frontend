@@ -14,18 +14,22 @@ const TreatmentPage = () => {
     {
       icon: ReceiptIcon,
       text: "Records",
+      link: "/records",
     },
     {
       icon: AccountIcon,
       text: "Profile",
+      link: "/",
     },
     {
       icon: CartIcon,
       text: "Cart",
+      link: "/",
     },
     {
       icon: MoreIcon,
       text: "More",
+      link: "/",
     },
   ];
 
@@ -41,11 +45,11 @@ const TreatmentPage = () => {
       </div>
 
       {/* body */}
-      <div className="mx-[15px]">
+      <div className="px-[15px] w-full">
         <IdCard />
-        <div className="flex items-center justify-between gap-[24px] sm:gap-[32px] mt-[32px]">
+        <div className="flex items-center justify-center gap-[34px] sm:gap-[32px] mt-[32px] w-full">
           {options.map((option, index) => (
-            <CircleOption icon={option.icon} text={option.text} key={index} />
+            <CircleOption option={option} key={index} />
           ))}
         </div>
 

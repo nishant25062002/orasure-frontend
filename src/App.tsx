@@ -16,7 +16,7 @@ function App() {
         <Route path="/plans/*" element={<PlanPage />} />
         <Route path="/treatment" element={<TreatmentPage />} />
         <Route path="/payment/*" element={<PaymentPage />} />
-        <Route path="/record" element={<DentalRecord />} />
+        <Route path="/records" element={<DentalRecord />} />
         <Route path="/detail-form" element={<DetailForm />} />
         <Route path="/test" element={<SwipeComp />} />
       </Routes>
