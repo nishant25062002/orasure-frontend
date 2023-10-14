@@ -9,7 +9,7 @@ import UserPhoto from "../../assets/user/UserPhoto.png";
 
 const IdCard = () => {
   return (
-    <div className="h-[205px] w-full max-w-[450px] min-w-[329px] shadow-md bg-[#fff] p-[11px_36px] !relative">
+    <div className="h-[205px] w-full max-w-[350px] min-w-[329px] shadow-md bg-[#fff] p-[11px_36px] !relative">
       {/* images for background */}
       <img src={IdImageUp} className="top-0 left-0 z-[0] absolute" />
       <img src={IdImageDown} className="bottom-0 right-0 z-[0] absolute" />
@@ -59,12 +59,14 @@ const IdCard = () => {
         </div>
         <div className="">
           {/* ID - ORA123456 */}
-          <div className="text-[#116EB6] text-[8px] font-[400]">Valid From</div>
+          <div className="text-[#116EB6] text-[8px] font-[400]">Valid Upto</div>
           <div className="text-[#000] text-[12px] font-[700]">12/08/23</div>
         </div>
         <div className="">
           {/* ID - ORA123456 */}
-          <div className="text-[#116EB6] text-[8px] font-[400]">Valid From</div>
+          <div className="text-[#116EB6] text-[8px] font-[400]">
+            Next Checkup
+          </div>
           <div className="text-[#000] text-[12px] font-[700]">12/08/23</div>
         </div>
       </div>
