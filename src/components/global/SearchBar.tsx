@@ -17,9 +17,11 @@ const SearchBar = ({ filter = false }: { filter?: boolean }) => {
           placeholder="Search Health Plans"
         />
       </div>
-      <div className="rounded-[4px] bg-[#fff] border-[1px] border-[#888] !w-[40px] h-[40px] flex items-center justify-center">
-        <img src={FilterIcon} alt="check" className="h-[9px] w-[16px]" />
-      </div>
+      {filter && (
+        <div className="rounded-[4px] bg-[#fff] border-[1px] border-[#888] !w-[40px] h-[40px] flex items-center justify-center">
+          <img src={FilterIcon} alt="check" className="h-[9px] w-[16px]" />
+        </div>
+      )}
     </div>
   );
 };
