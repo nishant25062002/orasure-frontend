@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const SwipeComp = () => {
+const ClinicPhotos = () => {
   const data = [
     {
       component: "hey",
@@ -35,8 +35,8 @@ const SwipeComp = () => {
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
-      loop={true}
-      slidesPerView={3}
+      loop={false}
+      slidesPerView={1}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
@@ -49,7 +49,7 @@ const SwipeComp = () => {
         prevEl: ".swiper-button-prev",
       }}
       modules={[EffectCoverflow, Pagination, Navigation]}
-      className="swiper_container"
+      className="swiper_container !h-[198px]"
     >
       <SwiperSlide>
         <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" />
@@ -73,4 +73,4 @@ const SwipeComp = () => {
   );
 };
 
-export default SwipeComp;
+export default ClinicPhotos;

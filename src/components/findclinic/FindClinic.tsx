@@ -36,7 +36,7 @@ const FindClinic = () => {
         <Header />
         <div className="mx-[16px]">
           <div className="text-[#000] text-[20px] font-[700] mb-[19px]">
-            Dental Records
+            Find My Clinic
           </div>
           <div className="mb-[4px]">
             <SearchBarLocation />
