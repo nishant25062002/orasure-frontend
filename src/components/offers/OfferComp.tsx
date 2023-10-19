@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import OfferImage from "../../assets/offer/OfferImage.svg";
+import { useNavigate } from "react-router-dom";
 
 const OfferComp = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="rounded-[16px] bg-[#116EB6] text-[#fff] w-full p-[20px_20px] relative">
+    <div
+      className={`rounded-[16px] text-[#fff] w-full p-[20px_20px] relative mt-[20px]`}
+      onClick={() => navigate("/offer-details")}
+    >
       <div className="text-[20px] leading-[20px] font-[600]">
         RCT price has gone down
       </div>
