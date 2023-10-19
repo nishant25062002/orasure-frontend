@@ -18,15 +18,15 @@ const Sidebar = ({
     },
     {
       tab: "Health Plan",
-      path: "/plans/dental-health-plan",
-    },
-    {
-      tab: "Membership Plan",
       path: "/plans",
     },
     {
+      tab: "Membership Plan",
+      path: "/plans/membership",
+    },
+    {
       tab: "Offers",
-      path: "",
+      path: "/offers",
     },
   ];
 
