@@ -10,7 +10,7 @@ const CustomButton = ({
 }: {
   customStyle?: string;
   text: string;
-  type: string;
+  type?: string;
   cancel?: boolean;
   clickfunction?: any;
 }) => {

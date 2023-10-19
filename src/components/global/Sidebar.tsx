@@ -32,7 +32,7 @@ const Sidebar = ({
 
   return (
     <div
-      className={`ease-linear transition-all duration-9000 fixed bg-[#ECF4F9] z-[10] w-full left-0 top-[90px] overflow-hidden ${
+      className={`ease-linear transition-all duration-9000 fixed bg-[#ECF4F9] z-[1000] w-full left-0 top-[90px] overflow-hidden ${
         show ? "h-[260px] shadow-md" : "h-[0]"
       } block`}
     >

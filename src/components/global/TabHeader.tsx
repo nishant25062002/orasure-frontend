@@ -18,7 +18,7 @@ const TabHeader = ({ data }: any) => {
           onClick={() => {
             navigate(tabData.path);
           }}
-          className={`cursor-pointer p-[8px_4px] sm:p-[12px] text-[#000] text-[12px] sm:text-[16px] font-[700] w-[50%] flex items-center justify-center ${
+          className={`relative cursor-pointer p-[8px_4px] sm:p-[12px] text-[#000] text-[12px] sm:text-[16px] font-[700] w-[50%] flex items-center justify-center ${
             activeTab == tabData.path ? "rounded-[33px] bg-[#9EC55B]" : ""
           }`}
         >

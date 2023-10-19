@@ -19,7 +19,7 @@ const TreatmentPage = () => {
     {
       icon: AccountIcon,
       text: "Profile",
-      link: "/",
+      link: "/profile",
     },
     {
       icon: CartIcon,

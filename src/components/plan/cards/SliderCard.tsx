@@ -11,7 +11,7 @@ const SliderCard = ({ data }: any) => {
   };
 
   return (
-    <div className="rounded-[16px] bg-[#9EC55B] w-[281px] h-[250px] p-[20px] shadow-sm">
+    <div className="rounded-[16px] bg-[#9EC55B] w-[full] h-[250px] p-[20px] shadow-sm">
       <div className="text-[#000] text-[14px] font-[700] leading-[14px] uppercase">
         {dataS.name}
       </div>

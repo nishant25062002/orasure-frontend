@@ -55,7 +55,7 @@ const SliderPage = ({
           className="swiper_container !rounded-[16px]"
         >
           {data.map(() => (
-            <SwiperSlide className="w-[281px] !rounded-[16px]">
+            <SwiperSlide className="min-w-[300px] w-[92%] !rounded-[16px]">
               <SliderCard />
             </SwiperSlide>
           ))}
