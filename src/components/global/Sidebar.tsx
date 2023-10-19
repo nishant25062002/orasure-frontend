@@ -14,7 +14,7 @@ const Sidebar = ({
   const tabs = [
     {
       tab: "Find My Clinic",
-      path: "",
+      path: "/find-my-clinic",
     },
     {
       tab: "Health Plan",

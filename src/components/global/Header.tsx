@@ -35,7 +35,7 @@ const Header = () => {
           <img
             src={Account}
             className="h-[20px] w-[20px]"
-            onClick={() => navigate("/detail-form")}
+            onClick={() => navigate("/profile")}
           />
           <img
             src={show ? Cross : Menu}

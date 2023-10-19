@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
-import Home from "./components/home/Home";
 import PlanPage from "./components/plan/PlanPage";
 import SwipeComp from "./components/test/SwipeComp";
 import PaymentPage from "./components/payment/PaymentPage";
@@ -9,12 +8,17 @@ import DentalRecord from "./components/Record/DentalRecord";
 import DetailForm from "./components/user/DetailForm";
 import FindClinic from "./components/findclinic/FindClinic";
 import ClinicDetailPage from "./components/findclinic/ClinicDetailPage";
+import OfferPage from "./components/offers/OfferPage";
+import OfferDetails from "./components/offers/OfferDetails";
+import Profile from "./components/user/Profile";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/offers" element={<OfferPage />} />
+        <Route path="/OfferDetails" element={<OfferDetails />} />
         <Route path="/plans/*" element={<PlanPage />} />
         <Route path="/treatment" element={<TreatmentPage />} />
         <Route path="/find-my-clinic" element={<FindClinic />} />
