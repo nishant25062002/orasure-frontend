@@ -31,7 +31,7 @@ const Steps = () => {
     },
   ];
   return (
-    <div className="mt-[40px]">
+    <div className="mt-[40px] flex flex-col items-center justify-center">
       <Heading
         heading={"Complete in Just 4 simple steps."}
         highlistText={"Dental Coverage"}

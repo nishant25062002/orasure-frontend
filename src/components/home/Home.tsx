@@ -66,7 +66,7 @@ const Home = () => {
         />
         <div className="absolute top-0 bg-[#031d448d] z-[0] w-full !h-full"></div>
       </div>
-      <div className="flex flex-wrap items-center justify-center mt-[-140px] bg-[#F7F8FC] min-w-[340px] max-w-[400px]">
+      <div className="flex flex-col items-center  justify-centery mt-[-140px] bg-[#F7F8FC] min-w-[340px] max-w-[500px]">
         <IdCard />
         <div className="text-[#116EB6] text-[12px] font-[400] flex justify-end w-full p-[12px_18px_20px_18px]">
           Tap on card to view Details
@@ -80,9 +80,7 @@ const Home = () => {
           <Steps />
         </div>
         {/* oofers */}
-        <div className="my-[32px] p-[16px] flex overflow-x-scroll gap-[20px]">
-          {/* <div className="mt-[10px] "> */}
-          {/* {offers.map((offer, index) => ( */}
+        <div className="my-[32px] p-[16px] flex overflow-x-scroll gap-[20px] max-w-full">
           <div className="bg-[#116EB6] rounded-[16px]">
             <OfferComp />
           </div>
