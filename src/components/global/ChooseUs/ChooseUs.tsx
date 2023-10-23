@@ -60,13 +60,10 @@ const ChooseUs = ({ founder = false }: { founder?: boolean }) => {
             height: "39px",
             marginTop: "40px",
             gap: "10px",
-            // color: customData.customColor,
             fontWeight: "500",
             fontSize: "12px",
             width: "162px",
             borderRadius: "64px",
-            // boxShadow: customData.boxShadow,
-            // border: customData.customBorder,
           }}
         >
           Read More

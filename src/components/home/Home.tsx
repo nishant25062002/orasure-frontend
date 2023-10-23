@@ -75,6 +75,8 @@ const Home = () => {
           {data.map((tab, index) => (
             <Tab key={index} tab={tab.tab} link={tab.link} img={tab.img} />
           ))}
+        </div>
+        <div className="px-[16px] flex items-center justify-center">
           <Steps />
         </div>
         {/* oofers */}
