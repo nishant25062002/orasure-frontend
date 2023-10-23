@@ -6,8 +6,10 @@ import Dropdown from "../input/Dropdown";
 import Gender from "../input/Gender";
 import TextArea from "../input/TextArea";
 import CustomButton from "../global/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const DetailForm = () => {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [maritalStatus, setMaritalStatus] = useState("");
   const [gender, setGender] = useState("");
@@ -64,7 +66,11 @@ const DetailForm = () => {
         />
         <TextArea fieldName={"Address"} setValue={setAddress} />
       </div>
-      <CustomButton text={"Submit"} customStyle={"p-[20px_38px]"} />
+      <CustomButton
+        text={"Submit"}
+        customStyle={"p-[20px_38px]"}
+        clickfunction={() => navigate("/payment")}
+      />
     </div>
   );
 };

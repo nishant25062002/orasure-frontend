@@ -7,7 +7,7 @@ import Cross from "../../assets/header/Cross.svg";
 import Sidebar from "./Sidebar";
 import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ profile = false }: { profile?: boolean }) => {
   const navigate = useNavigate();
 
   const [show, setShow] = useState(false);
@@ -31,12 +31,14 @@ const Header = () => {
           onClick={() => navigate("/plans")}
         />
         <div className="flex gap-[22px]">
-          <img src={Cart} className="h-[20px] w-[20px]" />
-          <img
-            src={Account}
-            className="h-[20px] w-[20px]"
-            onClick={() => navigate("/profile")}
-          />
+          {!profile && <img src={Cart} className="h-[20px] w-[20px]" />}
+          {!profile && (
+            <img
+              src={Account}
+              className="h-[20px] w-[20px]"
+              onClick={() => navigate("/profile")}
+            />
+          )}
           <img
             src={show ? Cross : Menu}
             className="h-[20px] w-[20px]"

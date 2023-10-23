@@ -13,6 +13,7 @@ import OfferDetails from "./components/offers/OfferDetails";
 import Profile from "./components/user/Profile";
 import Home from "./components/home/Home";
 import ComparePlan from "./components/plan/compare/ComparePlan";
+import PaymentPortal from "./components/payment/PaymentPortal";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/find-my-clinic" element={<FindClinic />} />
         <Route path="/clinic-details" element={<ClinicDetailPage />} />
         <Route path="/payment/*" element={<PaymentPage />} />
+        <Route path="/payment-portal" element={<PaymentPortal />} />
         <Route path="/records" element={<DentalRecord />} />
         <Route path="/detail-form" element={<DetailForm />} />
         <Route path="/test" element={<SwipeComp />} />

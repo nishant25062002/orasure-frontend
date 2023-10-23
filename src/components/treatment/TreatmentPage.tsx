@@ -8,6 +8,7 @@ import MoreIcon from "../../assets/global/MoreIcon.svg";
 import AccountIcon from "../../assets/header/Account.svg";
 import CartIcon from "../../assets/header/Cart.svg";
 import ServiceList from "./ServiceList";
+import Header from "../global/Header";
 
 const TreatmentPage = () => {
   const options = [
@@ -35,14 +36,15 @@ const TreatmentPage = () => {
 
   return (
     <div className="relative">
+      <Header profile />
       <Divider
         customStyle={
-          "rounded-[0px_0px_12px_12px] bg-[#EBF4F8] h-[215px] w-full absolute fixed z-[-1]"
+          "rounded-[0px_0px_12px_12px] bg-[#EBF4F8] h-[115px] w-full absolute fixed z-[-1]"
         }
       />
-      <div className="flex p-[27px_16px_31px_16px] justify-between items-center h-fit bg-transparent">
+      {/* <div className="flex p-[27px_16px_31px_16px] justify-between items-center h-fit bg-transparent">
         <img src={Logo} className="w-[148px] h-[33.57px]" />
-      </div>
+      </div> */}
 
       {/* body */}
       <div className="px-[15px] w-full">

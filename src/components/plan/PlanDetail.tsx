@@ -172,7 +172,7 @@ const PlanDetail = ({
               <CustomButton
                 customStyle={"w-full mb-[16px] mt-[47px]"}
                 text={"Proceed payment"}
-                clickfunction={() => navigate("/treatment")}
+                clickfunction={() => navigate("/payment-portal")}
               />
             </>
           ) : (
@@ -183,7 +183,7 @@ const PlanDetail = ({
                   monthly ? "w-full mb-[16px] mt-[47px]" : "w-full mb-[16px]"
                 }
                 text={"Apply now"}
-                clickfunction={() => navigate("/payment")}
+                clickfunction={() => navigate("/detail-form")}
               />
               <CustomButton
                 customStyle={"w-full "}
