@@ -188,6 +188,7 @@ const PlanDetail = ({
               <CustomButton
                 customStyle={"w-full "}
                 text={"Compare Plans"}
+                clickfunction={() => navigate("/compare-plan")}
                 cancel
               />
             </>

@@ -12,6 +12,7 @@ import OfferPage from "./components/offers/OfferPage";
 import OfferDetails from "./components/offers/OfferDetails";
 import Profile from "./components/user/Profile";
 import Home from "./components/home/Home";
+import ComparePlan from "./components/plan/compare/ComparePlan";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/offers" element={<OfferPage />} />
         <Route path="/offer-details" element={<OfferDetails />} />
         <Route path="/plans/*" element={<PlanPage />} />
+        <Route path="/compare-plan" element={<ComparePlan />} />
         <Route path="/treatment" element={<TreatmentPage />} />
         <Route path="/find-my-clinic" element={<FindClinic />} />
         <Route path="/clinic-details" element={<ClinicDetailPage />} />

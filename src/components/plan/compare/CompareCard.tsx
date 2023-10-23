@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Divider from "../../global/Divider";
 import CheckIcon from "../../../assets/global/Check.svg";
-import { useNavigate } from "react-router-dom";
+import AddIcon from "../../../assets/plans/AddIcon.svg";
 
 const CompareCard = () => {
-  const navigate = useNavigate();
+  const [selected, setSelected] = useState(false);
 
   const dataS = {
     name: "Enamel Member Plan",
@@ -15,9 +15,12 @@ const CompareCard = () => {
 
   return (
     <div
-      className="rounded-[16px] bg-[#fff] w-[100%] max-w-[350%] h-[250px] p-[20px] border-[1px] border-[#9EC55B]  my-[8px]"
-      onClick={() => navigate("/treatment")}
+      className="relative rounded-[16px] bg-[#fff] w-[100%] max-w-[350%] h-[250px] p-[20px] border-[1px] border-[#9EC55B]  my-[8px]"
+      onClick={() => setSelected(!selected)}
     >
+      {selected && (
+        <img src={AddIcon} className="absolute top-[-8px] right-[-8px]" />
+      )}
       <div className="text-[#9EC55B] text-[14px] font-[700] leading-[14px] uppercase">
         {dataS.name}
       </div>

@@ -8,7 +8,7 @@ const FixedBottom = () => {
         variant="outlined"
         className="shadow-[0px_2px_15px_0px_rgba(0,0,0,0.15)] w-full !border-[1px] !border-[#000] !rounded-[35px] !text-[#000] text-[16px] font-[500]"
       >
-        Claim Now
+        Compare Plans
       </Button>
     </div>
   );
