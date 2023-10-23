@@ -7,7 +7,7 @@ const OfferComp = () => {
 
   return (
     <div
-      className={`rounded-[16px] text-[#fff] w-full p-[20px_20px] relative mt-[20px]`}
+      className={`rounded-[16px] text-[#fff] w-full p-[20px_20px] relative mt-[20px] min-w-[330px]`}
       onClick={() => navigate("/offer-details")}
     >
       <div className="text-[20px] leading-[20px] font-[600]">

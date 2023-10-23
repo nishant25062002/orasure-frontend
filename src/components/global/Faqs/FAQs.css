@@ -1,0 +1,29 @@
+.answer {
+  height: 0;
+  overflow: hidden;
+  animation-duration: 0.3s;
+  animation-name: _ans;
+}
+
+.show_answer {
+  animation-name: show_ans;
+  overflow: hidden;
+}
+
+@keyframes show_ans {
+  from {
+    height: 0;
+  }
+  to {
+    height: 70px;
+  }
+}
+
+@keyframes _ans {
+  from {
+    height: 150px;
+  }
+  to {
+    height: 0;
+  }
+}

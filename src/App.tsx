@@ -11,11 +11,13 @@ import ClinicDetailPage from "./components/findclinic/ClinicDetailPage";
 import OfferPage from "./components/offers/OfferPage";
 import OfferDetails from "./components/offers/OfferDetails";
 import Profile from "./components/user/Profile";
+import Home from "./components/home/Home";
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/offers" element={<OfferPage />} />
         <Route path="/offer-details" element={<OfferDetails />} />
