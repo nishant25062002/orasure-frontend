@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import PlanPage from "./components/plan/PlanPage";
-import SwipeComp from "./components/test/SwipeComp";
 import PaymentPage from "./components/payment/PaymentPage";
 import TreatmentPage from "./components/treatment/TreatmentPage";
 import DentalRecord from "./components/Record/DentalRecord";
@@ -16,24 +15,36 @@ import ComparePlan from "./components/plan/compare/ComparePlan";
 import PaymentPortal from "./components/payment/PaymentPortal";
 
 function App() {
+  const [path, setPath] = useState("");
+
+  const scrollTop = () => {
+    if (path != window.location.pathname) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    setPath(window.location.pathname);
+  };
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/offers" element={<OfferPage />} />
-        <Route path="/offer-details" element={<OfferDetails />} />
-        <Route path="/plans/*" element={<PlanPage />} />
-        <Route path="/compare-plan" element={<ComparePlan />} />
-        <Route path="/treatment" element={<TreatmentPage />} />
-        <Route path="/find-my-clinic" element={<FindClinic />} />
-        <Route path="/clinic-details" element={<ClinicDetailPage />} />
-        <Route path="/payment/*" element={<PaymentPage />} />
-        <Route path="/payment-portal" element={<PaymentPortal />} />
-        <Route path="/records" element={<DentalRecord />} />
-        <Route path="/detail-form" element={<DetailForm />} />
-        <Route path="/test" element={<SwipeComp />} />
-      </Routes>
+      <div onClick={scrollTop}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/offers" element={<OfferPage />} />
+          <Route path="/offer-details" element={<OfferDetails />} />
+          <Route path="/plans/*" element={<PlanPage />} />
+          <Route path="/compare-plan" element={<ComparePlan />} />
+          <Route path="/treatment" element={<TreatmentPage />} />
+          <Route path="/find-my-clinic" element={<FindClinic />} />
+          <Route path="/clinic-details" element={<ClinicDetailPage />} />
+          <Route path="/payment/*" element={<PaymentPage />} />
+          <Route path="/payment-portal" element={<PaymentPortal />} />
+          <Route path="/records" element={<DentalRecord />} />
+          <Route path="/detail-form" element={<DetailForm />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

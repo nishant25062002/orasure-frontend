@@ -11,27 +11,29 @@ import ChooseUs from "../global/ChooseUs/ChooseUs";
 import IdCard from "../user/IdCard";
 import OfferComp from "../offers/OfferComp";
 import Plan from "./component/Plan";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   const data = [
     {
       tab: "Dental Health Plan",
-      link: "",
+      link: "/plans",
       img: AddFrame,
     },
     {
       tab: " Membership Plans",
-      link: "",
+      link: "/plans/membership",
       img: AddFrame,
     },
     {
       tab: "Exciting Dental Offers",
-      link: "",
+      link: "/offers",
       img: ToothFrame,
     },
     {
       tab: "Book an Appointment",
-      link: "",
+      link: "/find-my-clinic",
       img: MedicineFrame,
     },
   ];
@@ -68,7 +70,12 @@ const Home = () => {
       </div>
       <div className="flex flex-col items-center  justify-centery mt-[-140px] bg-[#F7F8FC] min-w-[340px] max-w-[500px]">
         <IdCard />
-        <div className="text-[#116EB6] text-[12px] font-[400] flex justify-end w-full p-[12px_18px_20px_18px]">
+        <div
+          className="text-[#116EB6] text-[12px] font-[400] flex justify-end w-full p-[12px_18px_20px_18px]"
+          onClick={() => {
+            navigate("/treatment");
+          }}
+        >
           Tap on card to view Details
         </div>
         <div className="px-[16px] flex flex-wrap items-center justify-center gap-[18px]">

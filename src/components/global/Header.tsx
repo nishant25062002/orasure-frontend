@@ -28,7 +28,7 @@ const Header = ({ profile = false }: { profile?: boolean }) => {
         <img
           src={Logo}
           className="w-[148px] h-[33.57px]"
-          onClick={() => navigate("/plans")}
+          onClick={() => navigate("/")}
         />
         <div className="flex gap-[22px]">
           {!profile && <img src={Cart} className="h-[20px] w-[20px]" />}
