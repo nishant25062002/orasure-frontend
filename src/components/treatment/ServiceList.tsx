@@ -111,7 +111,7 @@ const ServiceList = () => {
         <CustomButton
           customStyle="w-full shadow-[0px_2px15px_0px_rgba(0,0,0,0.15)]"
           text={"PROCEED"}
-          // clickfunction={() => navigate("/payment")}
+          clickfunction={() => navigate("/qr-scanner")}
         />
       </div>
     </div>

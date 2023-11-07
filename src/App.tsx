@@ -13,6 +13,8 @@ import Profile from "./components/user/Profile";
 import Home from "./components/home/Home";
 import ComparePlan from "./components/plan/compare/ComparePlan";
 import PaymentPortal from "./components/payment/PaymentPortal";
+import Scanner from "./components/QR/Scanner";
+import TokenTransfer from "./components/token/TokenTransfer";
 
 function App() {
   const [path, setPath] = useState("");
@@ -26,6 +28,7 @@ function App() {
     }
     setPath(window.location.pathname);
   };
+
   return (
     <Router>
       <div onClick={scrollTop}>
@@ -37,6 +40,8 @@ function App() {
           <Route path="/plans/*" element={<PlanPage />} />
           <Route path="/compare-plan" element={<ComparePlan />} />
           <Route path="/treatment" element={<TreatmentPage />} />
+          <Route path="/token-transfer" element={<TokenTransfer />} />
+          <Route path="/qr-scanner" element={<Scanner />} />
           <Route path="/find-my-clinic" element={<FindClinic />} />
           <Route path="/clinic-details" element={<ClinicDetailPage />} />
           <Route path="/payment/*" element={<PaymentPage />} />
