@@ -19,8 +19,8 @@ const Scanner: React.FC = () => {
   };
 
   const previewStyle = {
-    height: 270,
-    width: 270,
+    height: "80vw",
+    width: "80vw",
   };
 
   return (
