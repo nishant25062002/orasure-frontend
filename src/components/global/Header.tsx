@@ -24,7 +24,7 @@ const Header = ({ profile = false }: { profile?: boolean }) => {
 
   return (
     <>
-      <div className="flex p-[27px_16px_31px_16px] justify-between items-center h-fit bg-[#ECF4F9] !z-[100]">
+      <div className="flex p-[27px_16px_31px_16px] justify-between items-center h-fit bg-[#ECF4F9] !z-[100] w-full">
         <img
           src={Logo}
           className="w-[148px] h-[33.57px]"

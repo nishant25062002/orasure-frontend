@@ -15,6 +15,7 @@ const DetailForm = () => {
   const [gender, setGender] = useState("");
   const [nationality, setNationality] = useState("");
   const [address, setAddress] = useState("");
+
   return (
     <div className="">
       <Header />

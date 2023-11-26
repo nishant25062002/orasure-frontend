@@ -15,6 +15,8 @@ import ComparePlan from "./components/plan/compare/ComparePlan";
 import PaymentPortal from "./components/payment/PaymentPortal";
 import Scanner from "./components/QR/Scanner";
 import TokenTransfer from "./components/token/TokenTransfer";
+import Login from "./components/global/Login/Login";
+import Signup from "./components/doctor/Signup/Signup";
 
 function App() {
   const [path, setPath] = useState("");
@@ -34,6 +36,7 @@ function App() {
       <div onClick={scrollTop}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/offers" element={<OfferPage />} />
           <Route path="/offer-details" element={<OfferDetails />} />
@@ -47,7 +50,8 @@ function App() {
           <Route path="/payment/*" element={<PaymentPage />} />
           <Route path="/payment-portal" element={<PaymentPortal />} />
           <Route path="/records" element={<DentalRecord />} />
-          <Route path="/detail-form" element={<DetailForm />} />
+          <Route path="/user-signup" element={<DetailForm />} />
+          <Route path="/doctor-signup" element={<Signup />} />
         </Routes>
       </div>
     </Router>
