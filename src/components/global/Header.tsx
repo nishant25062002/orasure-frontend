@@ -7,7 +7,13 @@ import Cross from "../../assets/header/Cross.svg";
 import Sidebar from "./Sidebar";
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ profile = false }: { profile?: boolean }) => {
+const Header = ({
+  profile = false,
+  doctor = false,
+}: {
+  profile?: boolean;
+  doctor?: boolean;
+}) => {
   const navigate = useNavigate();
 
   const [show, setShow] = useState(false);
@@ -46,7 +52,7 @@ const Header = ({ profile = false }: { profile?: boolean }) => {
           />
         </div>
       </div>
-      {show && <Sidebar show setShow={setShow} />}
+      {show && <Sidebar show setShow={setShow} doctor />}
     </>
   );
 };

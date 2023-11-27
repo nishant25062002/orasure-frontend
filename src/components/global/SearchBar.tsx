@@ -4,7 +4,6 @@ import FilterIcon from "../../assets/global/FilterIcon.svg";
 
 const SearchBar = ({ filter = false }: { filter?: boolean }) => {
   return (
-    // p-[16px_24px_16px_14px]
     <div className="flex gap-[8px]">
       <div
         className={`h-[40px] border-[1px] border-[#888] rounded-[4px] flex p-[12px] gap-[10px] bg-[#fff] ${
@@ -14,7 +13,7 @@ const SearchBar = ({ filter = false }: { filter?: boolean }) => {
         <img src={SearchIcon} className="h-[15px] w-[15px]" />
         <input
           className="w-[100%] text-[12px] text-[#888] outline-none border-none bg-transparent"
-          placeholder="Search Health Plans"
+          placeholder="Search "
         />
       </div>
       {filter && (

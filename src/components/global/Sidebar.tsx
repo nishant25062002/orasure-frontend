@@ -4,9 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({
   show = false,
+  doctor = false,
   setShow,
 }: {
   show?: boolean;
+  doctor?: boolean;
   setShow: any;
 }) => {
   const navigate = useNavigate();
@@ -30,6 +32,17 @@ const Sidebar = ({
     },
   ];
 
+  const doctorTab = [
+    {
+      tab: "Ticket",
+      path: "/doctor-ticket",
+    },
+    {
+      tab: "Offers",
+      path: "/doctor-offer/",
+    },
+  ];
+
   return (
     <div
       className={`ease-linear transition-all duration-9000 fixed bg-[#ECF4F9] z-[1000] w-full left-0 top-[90px] overflow-hidden ${
@@ -37,20 +50,36 @@ const Sidebar = ({
       } block`}
     >
       <div className="px-[17px]">
-        {tabs.map((tab: any, index: number) => (
-          <div key={index}>
-            <Divider customStyle="bg-[#D9D9D9] h-[0.5px] w-full" />
-            <div
-              className="text-[#444] text-[16px] font-[700] py-[17px]"
-              onClick={() => {
-                navigate(tab.path);
-                setShow(false);
-              }}
-            >
-              {tab.tab}
+        {!doctor &&
+          tabs.map((tab: any, index: number) => (
+            <div key={index}>
+              <Divider customStyle="bg-[#D9D9D9] h-[0.5px] w-full" />
+              <div
+                className="text-[#444] text-[16px] font-[700] py-[17px]"
+                onClick={() => {
+                  navigate(tab.path);
+                  setShow(false);
+                }}
+              >
+                {tab.tab}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        {doctor &&
+          doctorTab.map((tab: any, index: number) => (
+            <div key={index}>
+              <Divider customStyle="bg-[#D9D9D9] h-[0.5px] w-full" />
+              <div
+                className="text-[#444] text-[16px] font-[700] py-[17px]"
+                onClick={() => {
+                  navigate(tab.path);
+                  setShow(false);
+                }}
+              >
+                {tab.tab}
+              </div>
+            </div>
+          ))}
         <Divider customStyle="bg-[#D9D9D9] h-[0.5px] w-full" />
       </div>
       {/* {show && (

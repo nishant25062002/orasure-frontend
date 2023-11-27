@@ -4,9 +4,11 @@ import FormHeader from "../Global/FormHeader";
 import { Button } from "@mui/material";
 import CustomInput from "../../input/CustomInput";
 import Dropdown from "../../input/Dropdown";
+import { useNavigate } from "react-router-dom";
 
 const StepSix = ({ setPage }: { setPage: any }) => {
   const [name, setName] = useState();
+  const navigate = useNavigate();
 
   return (
     <div className="w-full">
@@ -54,7 +56,7 @@ const StepSix = ({ setPage }: { setPage: any }) => {
           </Button>
           <Button
             className="w-[50%] !border-[0.5px] !rounded-[4px] !text-[#FFF] text-[16px] font-[500] !bg-[#116EB6] "
-            onClick={() => setPage(6)}
+            onClick={() => navigate("/doctor-offer/")}
           >
             Submit
           </Button>

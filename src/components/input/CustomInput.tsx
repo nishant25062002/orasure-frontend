@@ -2,13 +2,13 @@ import React, { useRef } from "react";
 import UploadIcon from "../../assets/global/UploadIcon.svg";
 
 const CustomInput = ({
-  fieldName,
+  fieldName = "",
   value = "",
   SetValue,
   type = "text",
   placeholder = "Type...",
 }: {
-  fieldName: string;
+  fieldName?: string;
   value?: string;
   SetValue: any;
   type?: string;
@@ -26,9 +26,11 @@ const CustomInput = ({
 
   return (
     <div className="text-[#000] text-[12px] font-[400] leading-[22px] mt-[18px]">
-      <div className="text-[#000] text-[12px] font-[400] leading-[22px]">
-        {fieldName} :
-      </div>
+      {fieldName && (
+        <div className="text-[#000] text-[12px] font-[400] leading-[22px]">
+          {fieldName} :
+        </div>
+      )}
       {type == "file" ? (
         <>
           <input

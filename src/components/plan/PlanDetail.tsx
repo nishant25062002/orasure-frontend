@@ -44,6 +44,7 @@ const PlanDetail = ({
       cost: "1980",
     },
   ];
+
   return (
     <div
       className={`flex flex-col items-center justify-center mb-[20px] ${

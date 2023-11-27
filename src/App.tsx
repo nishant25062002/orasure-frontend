@@ -20,6 +20,7 @@ import Signup from "./components/doctor/Signup/Signup";
 import TicketPage from "./components/doctor/Ticket/TicketPage";
 import DoctorOfferPage from "./components/doctor/Offer/OfferPage";
 import TermsPage from "./components/doctor/Offer/Cards/TermsPage";
+import CardDetails from "./components/doctor/Ticket/Cards/CardDetails";
 
 function App() {
   const [path, setPath] = useState("");
@@ -58,6 +59,7 @@ function App() {
           <Route path="/doctor-ticket" element={<TicketPage />} />
           <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
           <Route path="/doctor-offer-terms" element={<TermsPage />} />
+          <Route path="/doctor-ticket-detail" element={<CardDetails />} />
         </Routes>
       </div>
     </Router>

@@ -4,12 +4,13 @@ import CustomInput from "../../input/CustomInput";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import BackIcon from "../../../assets/global/BackIcon.svg";
+import Dropdown from "../../input/Dropdown";
 
 const StepThree = ({ setPage }: { setPage: any }) => {
   const navigate = useNavigate();
   const [clinicName, setClinicName] = useState("");
   const [clinicNumber, setClinicNumber] = useState("");
-
+  const [country, setCountry] = useState("");
   return (
     <div className="w-full">
       {" "}
@@ -29,6 +30,22 @@ const StepThree = ({ setPage }: { setPage: any }) => {
           fieldName="Name of the Clinic"
         />
         <CustomInput
+          SetValue={setClinicName}
+          placeholder="Address line 1"
+          fieldName="Address"
+        />
+        <CustomInput SetValue={setClinicName} placeholder="Address line 2" />
+        <div className="flex gap-[11px]">
+          <CustomInput SetValue={setClinicName} placeholder="City" />
+          <CustomInput SetValue={setClinicName} placeholder="Pincode" />
+        </div>
+        <Dropdown
+          selectedValue={country}
+          setSelectedValue={setCountry}
+          options={["India", "Pakistan", "China", "Nepal", "Sri Lanka"]}
+          placeholder={"Country"}
+        />
+        <CustomInput
           type="number"
           SetValue={setClinicNumber}
           placeholder="+91"
@@ -41,7 +58,6 @@ const StepThree = ({ setPage }: { setPage: any }) => {
           fieldName="Clinic WhatsApp Number"
         />
         <CustomInput
-          type="number"
           SetValue={setClinicNumber}
           placeholder="abc@gmail.com"
           fieldName="Clinic Email ID"
@@ -53,10 +69,21 @@ const StepThree = ({ setPage }: { setPage: any }) => {
           fieldName="Consultation Fee"
         />
         <CustomInput
-          type="number"
           SetValue={setClinicNumber}
           placeholder="Treatment Offered 1"
           fieldName="Treatment Offered"
+        />
+        <CustomInput
+          SetValue={setClinicNumber}
+          placeholder="Treatment Offered 2"
+        />
+        <CustomInput
+          SetValue={setClinicNumber}
+          placeholder="Treatment Offered 3"
+        />
+        <CustomInput
+          SetValue={setClinicNumber}
+          placeholder="Treatment Offered 4"
         />
 
         <div className="flex w-full gap-[45px] justify-center my-[40px]">
