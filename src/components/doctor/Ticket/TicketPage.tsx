@@ -6,7 +6,7 @@ import SearchBar from "../../global/SearchBar";
 const TicketPage = () => {
   return (
     <div className="bg-[#edf2f5] bg-gradient-to-b from-[#EAF3F8] via-[#EAF3F8] to-[rgba(234,243,248,0)] pb-[10px]">
-      <Header />
+      <Header doctor />
       <div className="mx-[16px]">
         <div className="text-[#000] text-[20px] font-[700] py-[20px]">
           Tickets

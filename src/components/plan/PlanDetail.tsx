@@ -184,7 +184,7 @@ const PlanDetail = ({
                   monthly ? "w-full mb-[16px] mt-[47px]" : "w-full mb-[16px]"
                 }
                 text={"Apply now"}
-                clickfunction={() => navigate("/detail-form")}
+                clickfunction={() => navigate("/user-signup")}
               />
               <CustomButton
                 customStyle={"w-full "}

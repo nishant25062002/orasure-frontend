@@ -13,7 +13,7 @@ const Signup = () => {
   return (
     <div className="flex justify-center">
       <div className="max-w-[420px] w-full flex flex-col items-center">
-        <Header />
+        <Header doctor />
         {page == 1 && <StepOne setPage={setPage} />}
         {page == 2 && <StepTwo setPage={setPage} />}
         {page == 3 && <StepThree setPage={setPage} />}

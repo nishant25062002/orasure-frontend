@@ -52,7 +52,7 @@ const Header = ({
           />
         </div>
       </div>
-      {show && <Sidebar show setShow={setShow} doctor />}
+      {show && <Sidebar show setShow={setShow} doctor={doctor} />}
     </>
   );
 };
