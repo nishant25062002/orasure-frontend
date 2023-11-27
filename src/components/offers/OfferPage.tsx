@@ -4,11 +4,11 @@ import SearchBar from "../global/SearchBar";
 import OfferComp from "./OfferComp";
 
 const OfferPage = () => {
-  const offers = [
-    { color: "#116EB6", expired: false },
-    { color: "#9EC55B", expired: false },
-    { color: "#ED2D3C", expired: false },
-  ];
+  // const offers = [
+  //   { color: "#116EB6", expired: false },
+  //   { color: "#9EC55B", expired: false },
+  //   { color: "#ED2D3C", expired: false },
+  // ];
 
   return (
     <div>

@@ -21,7 +21,7 @@ const CustomInput = ({
   };
 
   const handleIconClick = () => {
-    inputRef.current?.click();
+    inputRef?.current?.click();
   };
 
   return (

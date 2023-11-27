@@ -18,10 +18,6 @@ const StepOne = ({ setPage }: { setPage: any }) => {
   const [course, setCourse] = useState("");
   const [experience, setExperience] = useState("");
 
-  const [nationality, setNationality] = useState("");
-  const [maritalStatus, setMaritalStatus] = useState("");
-  const [address, setAddress] = useState("");
-
   return (
     <div className="w-full">
       {" "}

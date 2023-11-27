@@ -17,6 +17,9 @@ import Scanner from "./components/QR/Scanner";
 import TokenTransfer from "./components/token/TokenTransfer";
 import Login from "./components/global/Login/Login";
 import Signup from "./components/doctor/Signup/Signup";
+import TicketPage from "./components/doctor/Ticket/TicketPage";
+import DoctorOfferPage from "./components/doctor/Offer/OfferPage";
+import TermsPage from "./components/doctor/Offer/Cards/TermsPage";
 
 function App() {
   const [path, setPath] = useState("");
@@ -52,6 +55,9 @@ function App() {
           <Route path="/records" element={<DentalRecord />} />
           <Route path="/user-signup" element={<DetailForm />} />
           <Route path="/doctor-signup" element={<Signup />} />
+          <Route path="/doctor-ticket" element={<TicketPage />} />
+          <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
+          <Route path="/doctor-offer-terms" element={<TermsPage />} />
         </Routes>
       </div>
     </Router>
