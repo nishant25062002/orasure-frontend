@@ -10,8 +10,8 @@ import PatientReview from "./PatientReview";
 
 const ClinicDetailPage = () => {
   return (
-    <div>
-      <div className="bg-gradient-to-b from-[#EAF3F8] via-[#EAF3F8] to-[rgba(234,243,248,0)] mb-[100px]">
+    <div className="flex justify-center">
+      <div className="max-w-[420px] w-full flex flex-col items-center bg-gradient-to-b from-[#EAF3F8] via-[#EAF3F8] to-[rgba(234,243,248,0)] mb-[100px]">
         <Header />
         <ClinicPhotos />
         <FixedBottom />

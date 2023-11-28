@@ -1,12 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  EffectCoverflow,
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-} from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css/effect-fade";
 import "swiper/css";
@@ -49,7 +43,7 @@ const ClinicPhotos = () => {
         prevEl: ".swiper-button-prev",
       }}
       modules={[EffectCoverflow, Pagination, Navigation]}
-      className="swiper_container !h-[198px]"
+      className="swiper_container !h-[198px] max-w-[420px] w-full "
     >
       <SwiperSlide>
         <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" />

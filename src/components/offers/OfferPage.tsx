@@ -4,17 +4,11 @@ import SearchBar from "../global/SearchBar";
 import OfferComp from "./OfferComp";
 
 const OfferPage = () => {
-  // const offers = [
-  //   { color: "#116EB6", expired: false },
-  //   { color: "#9EC55B", expired: false },
-  //   { color: "#ED2D3C", expired: false },
-  // ];
-
   return (
-    <div>
-      <div className="bg-gradient-to-b from-[#EAF3F8] via-[#EAF3F8] to-[rgba(234,243,248,0)]">
+    <div className="flex justify-center">
+      <div className="bg-gradient-to-b from-[#EAF3F8] via-[#EAF3F8] to-[rgba(234,243,248,0)] max-w-[420px] w-full flex flex-col items-center">
         <Header />
-        <div className="mx-[16px]">
+        <div className="w-full px-[16px]">
           <div className="text-[#000] text-[20px] font-[700] mb-[19px]">
             Offers
           </div>

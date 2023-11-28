@@ -31,7 +31,7 @@ const SliderPage = ({
   ];
 
   return (
-    <>
+    <div className="w-full">
       <TabHeader data={tabData} />
       <div className=" mt-[34px] mx-[8px]">
         <Swiper
@@ -52,7 +52,7 @@ const SliderPage = ({
             prevEl: ".swiper-button-prev",
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="swiper_container !rounded-[16px]"
+          className="swiper_container !rounded-[16px] max-w-[420px] w-full "
         >
           {data.map(() => (
             <SwiperSlide className="min-w-[300px] w-[92%] !rounded-[16px]">
@@ -64,7 +64,7 @@ const SliderPage = ({
         {/* card details  */}
         <PlanDetail isHeading={isHeading} isMembership={isMembership} />
       </div>
-    </>
+    </div>
   );
 };
 

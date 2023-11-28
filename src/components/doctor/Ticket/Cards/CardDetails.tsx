@@ -2,12 +2,10 @@ import React from "react";
 import CheckIcon from "../../../../assets/global/Check.svg";
 import Divider from "../../../global/Divider";
 import { Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import Header from "../../../global/Header";
 import CardComponent from "./CardComponent";
 
 const CardDetails = ({ status = "Settled" }: { status?: string }) => {
-  const navigate = useNavigate();
   const data = [
     {
       service: "Routine Checkup",
@@ -134,14 +132,14 @@ const CardDetails = ({ status = "Settled" }: { status?: string }) => {
             <div className="gap-[6px] flex items-center justify-center my-[20px]">
               <Button
                 className="!px-[20px] w-[145px] h-[40px] !rounded-[4px] !text-[#E33629] font-[500] text-[16px] !bg-[#fff]"
-                onClick={() => navigate("/doctor-offer-terms")}
+                onClick={() => {}}
                 style={{ border: "0.5px solid rgba(68, 68, 68, 0.57)" }}
               >
                 Raise Issue
               </Button>
               <Button
                 className="!px-[20px] w-[145px] h-[40px] !rounded-[4px] !text-[#FFF] font-[500] text-[16px] !bg-[#E33629]"
-                onClick={() => navigate("/doctor-offer-terms")}
+                onClick={() => {}}
               >
                 Delete Ticket
               </Button>

@@ -35,7 +35,7 @@ const TreatmentPage = () => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative flex justify-center">
       <Header profile />
       <Divider
         customStyle={
