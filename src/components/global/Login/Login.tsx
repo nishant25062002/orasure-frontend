@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center w-full">
       <div className="max-w-[420px] w-full px-[24px] flex flex-col items-center">
         <img
           src={Logo}

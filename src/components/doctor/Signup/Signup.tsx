@@ -11,16 +11,14 @@ const Signup = () => {
   const [page, setPage] = useState(1);
 
   return (
-    <div className="flex justify-center">
-      <div className="max-w-[420px] w-full flex flex-col items-center">
-        <Header doctor />
-        {page == 1 && <StepOne setPage={setPage} />}
-        {page == 2 && <StepTwo setPage={setPage} />}
-        {page == 3 && <StepThree setPage={setPage} />}
-        {page == 4 && <StepFour setPage={setPage} />}
-        {page == 5 && <StepFive setPage={setPage} />}
-        {page == 6 && <StepSix setPage={setPage} />}
-      </div>
+    <div className="w-full">
+      <Header doctor />
+      {page == 1 && <StepOne setPage={setPage} />}
+      {page == 2 && <StepTwo setPage={setPage} />}
+      {page == 3 && <StepThree setPage={setPage} />}
+      {page == 4 && <StepFour setPage={setPage} />}
+      {page == 5 && <StepFive setPage={setPage} />}
+      {page == 6 && <StepSix setPage={setPage} />}
     </div>
   );
 };

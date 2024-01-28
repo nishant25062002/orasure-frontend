@@ -18,7 +18,7 @@ const PaymentPage = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#EAF3F8] via-[rgba(234,243,248,0.00)] to-transparent">
+    <div className="bg-gradient-to-b from-[#EAF3F8] via-[rgba(234,243,248,0.00)] to-transparent w-full">
       <Header />
       <TabHeader data={tabData} />
       <div className=" mt-[34px] mx-[8px]">

@@ -37,30 +37,35 @@ function App() {
 
   return (
     <Router>
-      <div onClick={scrollTop}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/offers" element={<OfferPage />} />
-          <Route path="/offer-details" element={<OfferDetails />} />
-          <Route path="/plans/*" element={<PlanPage />} />
-          <Route path="/compare-plan" element={<ComparePlan />} />
-          <Route path="/treatment" element={<TreatmentPage />} />
-          <Route path="/token-transfer" element={<TokenTransfer />} />
-          <Route path="/qr-scanner" element={<Scanner />} />
-          <Route path="/find-my-clinic" element={<FindClinic />} />
-          <Route path="/clinic-details" element={<ClinicDetailPage />} />
-          <Route path="/payment/*" element={<PaymentPage />} />
-          <Route path="/payment-portal" element={<PaymentPortal />} />
-          <Route path="/records" element={<DentalRecord />} />
-          <Route path="/user-signup" element={<DetailForm />} />
-          <Route path="/doctor-signup" element={<Signup />} />
-          <Route path="/doctor-ticket" element={<TicketPage />} />
-          <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
-          <Route path="/doctor-offer-terms" element={<TermsPage />} />
-          <Route path="/doctor-ticket-detail" element={<CardDetails />} />
-        </Routes>
+      <div className="flex justify-center">
+        <div
+          className="max-w-[420px] w-full flex flex-col items-center"
+          onClick={scrollTop}
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/offers" element={<OfferPage />} />
+            <Route path="/offer-details" element={<OfferDetails />} />
+            <Route path="/plans/*" element={<PlanPage />} />
+            <Route path="/compare-plan" element={<ComparePlan />} />
+            <Route path="/treatment" element={<TreatmentPage />} />
+            <Route path="/token-transfer" element={<TokenTransfer />} />
+            <Route path="/qr-scanner" element={<Scanner />} />
+            <Route path="/find-my-clinic" element={<FindClinic />} />
+            <Route path="/clinic-details" element={<ClinicDetailPage />} />
+            <Route path="/payment/*" element={<PaymentPage />} />
+            <Route path="/payment-portal" element={<PaymentPortal />} />
+            <Route path="/records" element={<DentalRecord />} />
+            <Route path="/user-signup" element={<DetailForm />} />
+            <Route path="/doctor-signup" element={<Signup />} />
+            <Route path="/doctor-ticket" element={<TicketPage />} />
+            <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
+            <Route path="/doctor-offer-terms" element={<TermsPage />} />
+            <Route path="/doctor-ticket-detail" element={<CardDetails />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

@@ -8,7 +8,7 @@ import FormDocumentField from "../global/FormDocumentField";
 
 const Profile = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center w-full">
       <div className="bg-gradient-to-b from-[#EAF3F8] via-[#EAF3F8] to-[rgba(234,243,248,0)] max-w-[420px] w-full flex flex-col items-center">
         <Header />
         <div className="px-[16px] w-full">

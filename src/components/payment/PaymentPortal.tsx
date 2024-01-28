@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const PaymentPortal = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="w-full">
       <div className="h-[70vh] w-full flex flex-col items-center justify-center">
         Payment Success
       </div>

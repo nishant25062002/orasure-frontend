@@ -17,7 +17,7 @@ const DetailForm = () => {
   const [address, setAddress] = useState("");
 
   return (
-    <div className="">
+    <div className="w-full">
       <Header />
       <FormHeader head="Patients Detail" />
       <div className="px-[25px] pb-[30px]">

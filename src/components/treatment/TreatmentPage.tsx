@@ -35,11 +35,11 @@ const TreatmentPage = () => {
   ];
 
   return (
-    <div className="relative flex justify-center">
+    <div className="relative flex flex-col justify-center">
       <Header profile />
       <Divider
         customStyle={
-          "rounded-[0px_0px_12px_12px] bg-[#EBF4F8] h-[115px] w-full absolute fixed z-[-1]"
+          "rounded-[0px_0px_12px_12px] bg-[#EBF4F8] h-[115px] w-full absolute top-0 z-[-1]"
         }
       />
       {/* <div className="flex p-[27px_16px_31px_16px] justify-between items-center h-fit bg-transparent">
