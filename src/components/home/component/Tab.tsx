@@ -6,7 +6,7 @@ const Tab = ({ tab, link, img }: { tab: string; link: string; img: any }) => {
 
   return (
     <div
-      className="rounded-[14px] border-[1px] border-[#D9D9D9] bg-[#fff] w-[144px] h-[141px] flex flex-col items-center justify-center z-[1]"
+      className="rounded-[14px] border-[1px] border-[#D9D9D9] bg-[#fff] w-[144px] h-[141px] flex flex-col items-center justify-center z-[1] shadow-lg"
       onClick={() => {
         navigate(link);
       }}

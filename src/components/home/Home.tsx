@@ -12,6 +12,10 @@ import IdCard from "../user/IdCard";
 import OfferComp from "../offers/OfferComp";
 import Plan from "./component/Plan";
 import { useNavigate } from "react-router-dom";
+import OfferImage1 from "../../assets/offer/offerimage1.svg";
+import OfferImage2 from "../../assets/offer/offerimage2.svg";
+import OfferImage3 from "../../assets/offer/offerimage3.svg";
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -88,17 +92,20 @@ const Home = () => {
             <Steps />
           </div>
           {/* oofers */}
-          <div className="my-[32px] p-[16px] flex overflow-x-scroll gap-[20px] max-w-full">
-            <div className="bg-[#116EB6] rounded-[16px]">
+          <div className="my-[32px] p-[16px] h-[400px] flex overflow-x-scroll gap-[20px] max-w-full">
+            {/* <div className="bg-[#116EB6] rounded-[16px]">
+              <OfferComp />
+            </div> */}
+            <OfferComp img={OfferImage1} />
+            <OfferComp img={OfferImage2} />
+            <OfferComp img={OfferImage3} />
+            {/* <div className="object-fill">
+              <OfferComp img={OfferImage2} />
+            </div> */}
+            {/* <div className="bg-[#ED2D3C] rounded-[16px]">
               <OfferComp />
             </div>
-            <div className="bg-[#9EC55B] rounded-[16px]">
-              <OfferComp />
-            </div>
-            <div className="bg-[#ED2D3C] rounded-[16px]">
-              <OfferComp />
-            </div>
-            {/* ))} */}
+            ))} */}
           </div>
           <ChooseUs />
           <Plan />

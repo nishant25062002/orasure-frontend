@@ -5,7 +5,7 @@ import IdImageDown from "../../assets/user/IdImageDown.svg";
 import IdImageUp from "../../assets/user/IdImageUp.svg";
 import CurvedLines from "../../assets/user/CurvedLines.svg";
 import CurvedLine from "../../assets/user/CurvedLine.svg";
-import UserPhoto from "../../assets/user/UserPhoto.png";
+import UserPhoto from "../../assets/user/UserPhoto.svg";
 
 const IdCard = () => {
   return (

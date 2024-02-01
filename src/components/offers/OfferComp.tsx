@@ -1,16 +1,20 @@
-import React from "react";
-import OfferImage from "../../assets/offer/OfferImage.svg";
+import React, { ImgHTMLAttributes } from "react";
+// import OfferImage from "../../assets/offer/OfferImage.svg";
 import { useNavigate } from "react-router-dom";
 
-const OfferComp = () => {
+
+
+
+
+const OfferComp = (props: any) => {
   const navigate = useNavigate();
 
   return (
     <div
-      className={`rounded-[16px] text-[#fff] w-full p-[20px_20px] relative mt-[20px] min-w-[330px]`}
+      className={`rounded-[16px] text-[#fff] w-full  p-[20px_20px] relative mt-[20px] min-w-[330px]`}
       onClick={() => navigate("/offer-details")}
     >
-      <div className="text-[20px] leading-[20px] font-[600]">
+      {/* <div className="text-[20px] leading-[20px] font-[600]">
         RCT price has gone down
       </div>
       <div className="text-[12px] font-[500] w-[60%] pt-[9px]">
@@ -20,8 +24,8 @@ const OfferComp = () => {
       <div className="text-[14px] font-[700] ">Claim now </div>
       <div className="text-[7px] font-[400] pt-[6px]">
         *For first ever recharge on Vi, T&C apply
-      </div>
-      <img src={OfferImage} className="absolute bottom-0 right-0" />
+      </div> */}
+      <img src={props.img} className=" rounded-3xl bottom-0 right-0" />
     </div>
   );
 };

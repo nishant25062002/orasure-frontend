@@ -3,8 +3,8 @@ import Divider from "../global/Divider";
 import LocationIcon from "../../assets/global/LocationIcon.svg";
 import Pannel from "../../assets/global/Pannel.svg";
 import Star from "../../assets/global/Star.svg";
-import UserPhoto from "../../assets/user/UserPhoto.png";
 import CustomButton from "../global/CustomButton";
+import UserPhoto from "../../assets/user/UserPhoto.svg";
 import PopUpAppointment from "./PopUpAppointment";
 import { useNavigate } from "react-router-dom";
 
