@@ -15,6 +15,8 @@ import { useNavigate } from "react-router-dom";
 import OfferImage1 from "../../assets/offer/offerimage1.svg";
 import OfferImage2 from "../../assets/offer/offerimage2.svg";
 import OfferImage3 from "../../assets/offer/offerimage3.svg";
+import Benefit from "../benefits/benefit";
+import Benefits from "../benefits/Benefits";
 
 
 const Home = () => {
@@ -91,6 +93,13 @@ const Home = () => {
           <div className="px-[16px] flex items-center justify-center">
             <Steps />
           </div>
+          {/* benefits */}
+
+          <div className="flex overflow-x-scroll max-w-full ">
+          <Benefits/>
+          </div>
+          
+
           {/* oofers */}
           <div className="my-[32px] p-[16px] h-[400px] flex overflow-x-scroll gap-[20px] max-w-full">
             {/* <div className="bg-[#116EB6] rounded-[16px]">
