@@ -17,6 +17,7 @@ import OfferImage1 from "../../assets/offer/offerimage1.svg";
 import OfferImage2 from "../../assets/offer/offerimage2.svg";
 import OfferImage3 from "../../assets/offer/offerimage3.svg";
 import Heading from "../global/Heading";
+import Benefits from "../benefits/Benefits";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -95,6 +96,12 @@ const Home = () => {
           <div className="px-[16px] flex items-center justify-center">
             <Steps />
           </div>
+          {/* benefits */}
+
+          <div className="flex overflow-x-scroll max-w-full ">
+            <Benefits />
+          </div>
+
           {/* oofers */}
           <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
             <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />
