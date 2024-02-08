@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../global/Header";
-import HomeBackground from "../../assets/global/HomeBackground.svg";
-import AddFrame from "../../assets/home/AddFrame.svg";
-import MedicineFrame from "../../assets/home/MedicineFrame.svg";
-import ToothFrame from "../../assets/home/ToothFrame.svg";
+import HomeBackground from "../../assets/home/HomeBackground.svg";
+import HealthPlan from "../../assets/home/HealthPlan.svg";
+import Membership from "../../assets/home/Membership.svg";
+import Offers from "../../assets/home/Offers.svg";
+import BookAppointment from "../../assets/home/BookAppointment.svg";
 import Tab from "./component/Tab";
 import Steps from "./component/Steps";
 import FAQs from "../global/Faqs/FAQs";
@@ -15,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 import OfferImage1 from "../../assets/offer/offerimage1.svg";
 import OfferImage2 from "../../assets/offer/offerimage2.svg";
 import OfferImage3 from "../../assets/offer/offerimage3.svg";
-
+import Heading from "../global/Heading";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -23,22 +24,22 @@ const Home = () => {
     {
       tab: "Dental Health Plan",
       link: "/plans",
-      img: AddFrame,
+      img: HealthPlan,
     },
     {
       tab: " Membership Plans",
       link: "/plans/membership",
-      img: AddFrame,
+      img: Membership,
     },
     {
       tab: "Exciting Dental Offers",
       link: "/offers",
-      img: ToothFrame,
+      img: Offers,
     },
     {
       tab: "Book an Appointment",
       link: "/find-my-clinic",
-      img: MedicineFrame,
+      img: BookAppointment,
     },
   ];
 
@@ -65,15 +66,18 @@ const Home = () => {
     <div className="flex justify-center">
       <div className="!max-w-[420px] w-full flex flex-col items-center">
         <Header />
-        <div className="relative z-[0] w-full !h-[290px]">
+        <div className="relative z-[0] w-full">
           <img
             src={HomeBackground}
             alt="img"
-            className="top-[10vh] z-[0] w-full brightness-50 !h-[290px]"
+            className="top-[10vh] z-[0] w-full"
           />
-          <div className="absolute top-0 bg-[#031d448d] z-[0] w-full !h-full"></div>
         </div>
-        <div className="flex flex-col items-center  justify-centery mt-[-140px] bg-[#F7F8FC] w-full">
+        <div className="text-[#262626] text-center text-[16px] font-[300] m-[40px_16px]">
+          Choose our Dental health plans and clinics as your go-to destinations
+          for the best Dental solutions
+        </div>
+        <div className="flex flex-col items-center  justify-centery w-full">
           <IdCard />
           <div
             className="text-[#116EB6] text-[12px] font-[400] flex justify-end w-full p-[12px_18px_20px_18px]"
@@ -83,7 +87,7 @@ const Home = () => {
           >
             Tap on card to view Details
           </div>
-          <div className="px-[16px] flex flex-wrap items-center justify-center gap-[18px]">
+          <div className="px-[16px] flex flex-wrap items-center justify-center gap-[8px]">
             {data.map((tab, index) => (
               <Tab key={index} tab={tab.tab} link={tab.link} img={tab.img} />
             ))}
@@ -92,24 +96,17 @@ const Home = () => {
             <Steps />
           </div>
           {/* oofers */}
-          <div className="my-[32px] p-[16px] h-[400px] flex overflow-x-scroll gap-[20px] max-w-full">
-            {/* <div className="bg-[#116EB6] rounded-[16px]">
-              <OfferComp />
-            </div> */}
-            <OfferComp img={OfferImage1} />
-            <OfferComp img={OfferImage2} />
-            <OfferComp img={OfferImage3} />
-            {/* <div className="object-fill">
+          <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
+            <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />
+            <div className="gap-[12px] p-[16px] pt-0 flex overflow-x-scroll max-w-full">
+              <OfferComp img={OfferImage1} />
               <OfferComp img={OfferImage2} />
-            </div> */}
-            {/* <div className="bg-[#ED2D3C] rounded-[16px]">
-              <OfferComp />
+              <OfferComp img={OfferImage3} />
             </div>
-            ))} */}
           </div>
           <ChooseUs />
           <Plan />
-          <div className="p-[16px] mb-[32px] flex overflow-x-scroll gap-[20px]">
+          <div className="p-[16px] mb-[32px] flex overflow-x-scroll gap-[20px] scrollHide">
             <FAQs Faqs={Faqs} />
           </div>
           <ChooseUs founder />

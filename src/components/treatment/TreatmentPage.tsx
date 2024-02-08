@@ -54,7 +54,6 @@ const TreatmentPage = () => {
             <CircleOption option={option} key={index} />
           ))}
         </div>
-
         {/* services lists */}
         <ServiceList />
       </div>
