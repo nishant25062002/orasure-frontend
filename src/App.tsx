@@ -39,7 +39,7 @@ function App() {
     <Router>
       <div className="flex justify-center">
         <div
-          className="max-w-[420px] w-full flex flex-col items-center"
+          className="!max-w-[420px] w-full flex flex-col items-center"
           onClick={scrollTop}
         >
           <Routes>

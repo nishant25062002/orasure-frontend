@@ -12,12 +12,12 @@ import IdCard from "../user/IdCard";
 import OfferComp from "../offers/OfferComp";
 import Plan from "./component/Plan";
 import { useNavigate } from "react-router-dom";
-import OfferImage from "../../assets/offer/Offer.svg";
 import OfferImage1 from "../../assets/offer/Offer1.svg";
 import OfferImage2 from "../../assets/offer/Offer2.svg";
 import OfferImage3 from "../../assets/offer/Offer3.svg";
 import Heading from "../global/Heading";
 import Benefits from "../benefits/Benefits";
+import Episodes from "./component/Episodes";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -65,52 +65,50 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex justify-center">
-      <div className="!max-w-[420px] w-full flex flex-col items-center">
-        <Header />
-        <div className="relative z-[0] w-full">
-          <img
-            src={HomeBackground}
-            alt="img"
-            className="top-[10vh] z-[0] w-full"
-          />
+    <div className="flex flex-col justify-center w-full">
+      <Header />
+      <div className="relative z-[0] w-full">
+        <img
+          src={HomeBackground}
+          alt="img"
+          className="top-[10vh] z-[0] w-full"
+        />
+      </div>
+      <div className="text-[#262626] text-center text-[16px] font-[300] !p-[40px_16px]">
+        Choose our Dental health plans and clinics as your go-to destinations
+        for the best Dental solutions
+      </div>
+      <div className="flex flex-col items-center  justify-centery w-full">
+        <IdCard />
+        <div
+          className="text-[#116EB6] text-[12px] font-[400] flex justify-end w-full p-[12px_18px_20px_18px]"
+          onClick={() => {
+            navigate("/treatment");
+          }}
+        >
+          Tap on card to view Details
         </div>
-        <div className="text-[#262626] text-center text-[16px] font-[300] m-[40px_16px]">
-          Choose our Dental health plans and clinics as your go-to destinations
-          for the best Dental solutions
+        <div className="px-[16px] flex flex-wrap items-center justify-center gap-[8px]">
+          {data.map((tab, index) => (
+            <Tab key={index} tab={tab.tab} link={tab.link} img={tab.img} />
+          ))}
         </div>
-        <div className="flex flex-col items-center  justify-centery w-full">
-          <IdCard />
-          <div
-            className="text-[#116EB6] text-[12px] font-[400] flex justify-end w-full p-[12px_18px_20px_18px]"
-            onClick={() => {
-              navigate("/treatment");
-            }}
-          >
-            Tap on card to view Details
+        <Episodes />
+        <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
+          <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />
+          <div className="gap-[12px] p-[16px] pt-0 flex overflow-x-scroll max-w-full">
+            <OfferComp img={OfferImage1} />
+            <OfferComp img={OfferImage2} />
+            <OfferComp img={OfferImage3} />
           </div>
-          <div className="px-[16px] flex flex-wrap items-center justify-center gap-[8px]">
-            {data.map((tab, index) => (
-              <Tab key={index} tab={tab.tab} link={tab.link} img={tab.img} />
-            ))}
-          </div>
-          <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
-            <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />
-            <div className="gap-[12px] p-[16px] pt-0 flex overflow-x-scroll max-w-full">
-              <OfferComp img={OfferImage} />
-              <OfferComp img={OfferImage1} />
-              <OfferComp img={OfferImage2} />
-              <OfferComp img={OfferImage3} />
-            </div>
-          </div>
-          <Benefits />
-          <ChooseUs />
-          <Plan />
-          <div className="p-[16px] mb-[32px] flex overflow-x-scroll gap-[20px] scrollHide">
-            <FAQs Faqs={Faqs} />
-          </div>
-          <ChooseUs founder />
         </div>
+        <Benefits />
+        <ChooseUs />
+        <Plan />
+        <div className="p-[16px] mb-[32px] flex overflow-x-scroll gap-[20px] scrollHide">
+          <FAQs Faqs={Faqs} />
+        </div>
+        <ChooseUs founder />
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ const benefitcard = [
 const Benefits = () => {
   return (
     <div
-      className="flex flex-col w-full items-center justify-center my-[47px]  px-[24px]"
+      className="flex flex-col w-full items-center justify-center my-[47px] px-[24px]"
       style={{
         background:
           "linear-gradient(180deg, rgba(17, 110, 182, 0.10) 0%, rgba(17, 110, 182, 0.00) 71.1%)",
