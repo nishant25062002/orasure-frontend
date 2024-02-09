@@ -1,6 +1,7 @@
 import React from "react";
-import SliderCard from "../../plan/cards/SliderCard";
 import { useNavigate } from "react-router-dom";
+import ImageCard from "../../plan/cards/ImageCard";
+import Dentin from "../../../assets/plans/Dentin.svg";
 
 const Plan = () => {
   const navigate = useNavigate();
@@ -15,12 +16,13 @@ const Plan = () => {
         </span>
       </div>
       <div className="mt-[32px] mb-[20px] relative flex items-center justify-center">
-        <div className="w-full h-[200px] rounded-[16px] absolute top-[20px] bg-[rgba(158,197,91,0.50)] z-[0]" />
+        <div className="w-full h-[250px] rounded-[16px] absolute top-[50px] bg-[#003050F2] z-[0]" />
         <div
-          className="w-[310px] z-[1] shadow-md rounded-[16px]"
+          className="w-[310px] z-[1] rounded-[16px] "
           onClick={() => navigate("/plans")}
         >
-          <SliderCard />
+          {/* shadow-[0px_1.105px_8.837px_2.209px_rgba(0,0,0,0.25)] */}
+          <ImageCard img={Dentin} />
         </div>
       </div>
       <div
