@@ -41,16 +41,16 @@ const benefitcard = [
   },
 ];
 
-const Benefits = (props: any) => {
+const Benefits = () => {
   return (
     <div
-      className="flex flex-col w-full items-center justify-center"
+      className="flex flex-col w-full items-center justify-center my-[47px]  px-[24px]"
       style={{
         background:
           "linear-gradient(180deg, rgba(17, 110, 182, 0.10) 0%, rgba(17, 110, 182, 0.00) 71.1%)",
       }}
     >
-      <div className="max-w-[200px] mt-[47px] mx-[24px] mb-[30px]">
+      <div className="max-w-[200px] mt-[47px] mb-[30px]">
         <Heading
           heading={"Why You should choose"}
           highlistText={"Orasure?"}
