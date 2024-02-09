@@ -6,21 +6,22 @@ import Membership from "../../assets/home/Membership.svg";
 import Offers from "../../assets/home/Offers.svg";
 import BookAppointment from "../../assets/home/BookAppointment.svg";
 import Tab from "./component/Tab";
-import Steps from "./component/Steps";
 import FAQs from "../global/Faqs/FAQs";
 import ChooseUs from "../global/ChooseUs/ChooseUs";
 import IdCard from "../user/IdCard";
 import OfferComp from "../offers/OfferComp";
 import Plan from "./component/Plan";
 import { useNavigate } from "react-router-dom";
-import OfferImage1 from "../../assets/offer/offerimage1.svg";
-import OfferImage2 from "../../assets/offer/offerimage2.svg";
-import OfferImage3 from "../../assets/offer/offerimage3.svg";
+import OfferImage from "../../assets/offer/Offer.svg";
+import OfferImage1 from "../../assets/offer/Offer1.svg";
+import OfferImage2 from "../../assets/offer/Offer2.svg";
+import OfferImage3 from "../../assets/offer/Offer3.svg";
 import Heading from "../global/Heading";
 import Benefits from "../benefits/Benefits";
 
 const Home = () => {
   const navigate = useNavigate();
+
   const data = [
     {
       tab: "Dental Health Plan",
@@ -96,6 +97,7 @@ const Home = () => {
           <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
             <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />
             <div className="gap-[12px] p-[16px] pt-0 flex overflow-x-scroll max-w-full">
+              <OfferComp img={OfferImage} />
               <OfferComp img={OfferImage1} />
               <OfferComp img={OfferImage2} />
               <OfferComp img={OfferImage3} />
