@@ -93,16 +93,6 @@ const Home = () => {
               <Tab key={index} tab={tab.tab} link={tab.link} img={tab.img} />
             ))}
           </div>
-          <div className="px-[16px] flex items-center justify-center">
-            <Steps />
-          </div>
-          {/* benefits */}
-
-          <div className="flex overflow-x-scroll max-w-full ">
-            <Benefits />
-          </div>
-
-          {/* oofers */}
           <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
             <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />
             <div className="gap-[12px] p-[16px] pt-0 flex overflow-x-scroll max-w-full">
@@ -111,6 +101,7 @@ const Home = () => {
               <OfferComp img={OfferImage3} />
             </div>
           </div>
+          <Benefits />
           <ChooseUs />
           <Plan />
           <div className="p-[16px] mb-[32px] flex overflow-x-scroll gap-[20px] scrollHide">
