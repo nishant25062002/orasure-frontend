@@ -3,7 +3,7 @@ import React from "react";
 type Props = {
   title: string;
   desc: string;
-  img: any;
+  img: string;
 };
 
 const BenefitCard = (props: Props) => {
