@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../global/Header";
 import SearchBar from "../global/SearchBar";
 import OfferComp from "./OfferComp";
+import OfferImage1 from "../../assets/offer/Offer1.svg";
+import OfferImage2 from "../../assets/offer/Offer2.svg";
+import OfferImage3 from "../../assets/offer/Offer3.svg";
 
 const OfferPage = () => {
   return (
@@ -15,19 +18,10 @@ const OfferPage = () => {
           <div className="mb-[4px] ">
             <SearchBar filter />
           </div>
-          <div className="mb-[40px] ">
-            {/* <div className="mt-[10px] "> */}
-            {/* {offers.map((offer, index) => ( */}
-            <div className="bg-[#116EB6] rounded-[16px]">
-              <OfferComp />
-            </div>
-            <div className="bg-[#9EC55B] rounded-[16px]">
-              <OfferComp />
-            </div>
-            <div className="bg-[#ED2D3C] rounded-[16px]">
-              <OfferComp />
-            </div>
-            {/* ))} */}
+          <div className="flex flex-col p-4 items-center mb-[40px]">
+            <OfferComp img={OfferImage1} />
+            <OfferComp img={OfferImage2} />
+            <OfferComp img={OfferImage3} />
           </div>
         </div>
       </div>
