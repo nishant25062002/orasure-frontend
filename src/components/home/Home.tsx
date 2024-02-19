@@ -96,8 +96,7 @@ const Home = () => {
         </div>
         {/*  */}
 
-        <UserType/>
-
+        <UserType />
 
         {/*  */}
         <Episodes />
