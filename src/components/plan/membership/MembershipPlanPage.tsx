@@ -10,6 +10,16 @@ const MembershipPlanPage = () => {
       image:MembershipPlanImage
 
     },
+    {
+      name: "Enamel Member Plan",
+      image:MembershipPlanImage
+
+    },
+    {
+      name: "Enamel Member Plan",
+      image:MembershipPlanImage
+
+    },
  
   
   ];
