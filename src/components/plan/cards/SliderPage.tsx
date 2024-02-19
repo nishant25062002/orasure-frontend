@@ -201,13 +201,33 @@ const SliderPage = ({
           </>
         )}
 
-        <PlanDetailService
-          data={data2}
-          Services={"Basic Services"}
-          Treatments="Treatments"
-          MarketCost="Market Cost"
-          isActive={false}
-        />
+        {show === 1 && (
+          <>
+            <PlanDetailService
+              data={data2}
+              Services={"Basic Services"}
+              Treatments="Treatments"
+              MarketCost="Market Cost"
+              isActive={false}
+            />
+            <PlanDetailService
+              data={data2}
+              Services={"Basic Services"}
+              Treatments="Treatments"
+              MarketCost="Market Cost"
+              isActive={true}
+              heading="Comprehensive Service"
+            />
+            <PlanDetailService
+              data={data2}
+              Services={"Basic Services"}
+              Treatments="Treatments"
+              MarketCost="Market Cost"
+              isActive={true}
+              heading="Major Service"
+            />
+          </>
+        )}
       </div>
     </div>
   );
