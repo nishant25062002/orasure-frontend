@@ -1,12 +1,13 @@
 import React from "react";
 import SliderCardPage from "../cards/SliderCardPage";
+import MembershipPlanImage from "../../../../src/assets/plans/Dentin.svg"
 
 
 const MembershipPlanPage = () => {
   const data = [
     {
       name: "Enamel Member Plan",
-      image:"/src/assets/plans/Dentin.svg"
+      image:MembershipPlanImage
 
     },
  
