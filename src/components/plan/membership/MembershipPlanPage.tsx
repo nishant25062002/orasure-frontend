@@ -1,29 +1,19 @@
 import React from "react";
-import SliderPage from "../cards/SliderPage";
+import SliderCardPage from "../cards/SliderCardPage";
+
 
 const MembershipPlanPage = () => {
   const data = [
     {
       name: "Enamel Member Plan",
+      image:"/src/assets/plans/Dentin.svg"
+
     },
-    {
-      name: "Second Member Plan",
-    },
-    {
-      name: "Premium Member Plan",
-    },
-    {
-      name: "Enamel Member Plan",
-    },
-    {
-      name: "Second Member Plan",
-    },
-    {
-      name: "Premium Member Plan",
-    },
+ 
+  
   ];
 
-  return <SliderPage data={data} isHeading isMembership />;
+  return <SliderCardPage data={data} isHeading isMembership />;
 };
 
 export default MembershipPlanPage;
