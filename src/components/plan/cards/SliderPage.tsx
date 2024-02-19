@@ -208,7 +208,8 @@ const SliderPage = ({
               Services={"Basic Services"}
               Treatments="Treatments"
               MarketCost="Market Cost"
-              isActive={false}
+              isActive={true}
+              heading="Basic Service"
             />
             <PlanDetailService
               data={data2}
