@@ -3,26 +3,16 @@ import SliderPage from "../cards/SliderPage";
 
 const HealthPlanPage = () => {
   const data = [
-    {
-      name: "Enamel Member Plan",
-    },
+    
     {
       name: "Second Member Plan",
-    },
-    {
-      name: "Premium Member Plan",
-    },
-    {
-      name: "Enamel Member Plan",
-    },
-    {
-      name: "Second Member Plan",
-    },
-    {
-      name: "Premium Member Plan",
-    },
-  ];
+      image:"/src/assets/plans/Frame 427318768.svg"
 
+    },
+
+
+  
+  ];
   return <SliderPage isHeading data={data} />;
 };
 
