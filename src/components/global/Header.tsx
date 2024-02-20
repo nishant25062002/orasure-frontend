@@ -37,7 +37,12 @@ const Header = ({
           onClick={() => navigate("/")}
         />
         <div className="flex gap-[22px]">
-          {!profile && <img src={Cart} className="h-[20px] w-[20px]" />}
+          {!profile && 
+          <img src={Cart} 
+          className="h-[20px] w-[20px]" 
+          onClick={ () => navigate("/user-type")}
+           
+          />}
           {!profile && (
             <img
               src={Account}

@@ -21,6 +21,8 @@ import TicketPage from "./components/doctor/Ticket/TicketPage";
 import DoctorOfferPage from "./components/doctor/Offer/OfferPage";
 import TermsPage from "./components/doctor/Offer/Cards/TermsPage";
 import CardDetails from "./components/doctor/Ticket/Cards/CardDetails";
+import UserType from "./components/UserType/UserType";
+import ChooseClinic from "./components/offers/ChooseClinic";
 
 function App() {
   const [path, setPath] = useState("");
@@ -64,6 +66,10 @@ function App() {
             <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
             <Route path="/doctor-offer-terms" element={<TermsPage />} />
             <Route path="/doctor-ticket-detail" element={<CardDetails />} />
+            <Route path="/user-type" element={<UserType />} />
+            <Route path="/Choose-clinic" element={<ChooseClinic />} />
+
+
           </Routes>
         </div>
       </div>
