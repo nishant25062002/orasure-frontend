@@ -66,6 +66,7 @@ function App() {
             <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
             <Route path="/doctor-offer-terms" element={<TermsPage />} />
             <Route path="/doctor-ticket-detail" element={<CardDetails />} />
+             {/*  */}
             <Route path="/user-type" element={<UserType />} />
             <Route path="/Choose-clinic" element={<ChooseClinic />} />
 
