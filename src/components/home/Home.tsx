@@ -94,11 +94,9 @@ const Home = () => {
             <Tab key={index} tab={tab.tab} link={tab.link} img={tab.img} />
           ))}
         </div>
-        {/*  */}
 
-        <UserType />
+        {/* <UserType /> */}
 
-        {/*  */}
         <Episodes />
         <div className="flex flex-col my-[32px] gap-[12px] max-w-full">
           <Heading heading={"Exiting"} highlistText={"Offers?"} number={2} />

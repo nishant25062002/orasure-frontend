@@ -1,30 +1,24 @@
 import React from "react";
-import SliderCardPage from "../cards/SliderCardPage";
-import MembershipPlanImage from "../../../../src/assets/plans/Dentin.svg"
-
+import EnamelIcon from "../../../../src/assets/plans/EnamelIcon.svg";
+import SliderPage from "../cards/SliderPage";
 
 const MembershipPlanPage = () => {
   const data = [
     {
       name: "Enamel Member Plan",
-      image:MembershipPlanImage
-
+      image: EnamelIcon,
     },
     {
       name: "Enamel Member Plan",
-      image:MembershipPlanImage
-
+      image: EnamelIcon,
     },
     {
       name: "Enamel Member Plan",
-      image:MembershipPlanImage
-
+      image: EnamelIcon,
     },
- 
-  
   ];
 
-  return <SliderCardPage data={data} isHeading isMembership />;
+  return <SliderPage data={data} isHeading isMembership />;
 };
 
 export default MembershipPlanPage;

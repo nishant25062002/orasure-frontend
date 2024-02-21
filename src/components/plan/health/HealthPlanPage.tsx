@@ -1,20 +1,17 @@
 import React from "react";
 import SliderPage from "../cards/SliderPage";
-import HealthPlanImage from "../../../../src/assets/plans/Frame 427318768.svg";
+import EnamelIcon from "../../../../src/assets/plans/EnamelIcon.svg";
+import DentinIcon from "../../../../src/assets/plans/DentinIcon.svg";
 
 const HealthPlanPage = () => {
   const data = [
     {
       name: "Second Member Plan",
-      image: HealthPlanImage,
+      image: EnamelIcon,
     },
     {
       name: "Second Member Plan",
-      image: HealthPlanImage,
-    },
-    {
-      name: "Second Member Plan",
-      image: HealthPlanImage,
+      image: DentinIcon,
     },
   ];
   return <SliderPage isHeading data={data} />;

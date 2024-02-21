@@ -96,10 +96,7 @@ const SliderCardPage = ({
         >
           {data.map((item: any) => (
             <SwiperSlide className="min-w-[500px] w-[70%] !rounded-[16px]">
-              {/* <SliderCard /> */}
-              <div className="flex justify-center items-center">
-                <img src={item.image} />
-              </div>
+              <SliderCard />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -110,8 +107,6 @@ const SliderCardPage = ({
           isHeading="ENAMEL HEALTH PLAN"
           justPrice="Just At ₹3999 "
         />
-
-
 
         <PlanBenefitsnew priceworth="₹17,000/-" isHeading="Plan Benefits" />
         {/* card details  */}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SliderCard from "./SliderCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css/effect-fade";
@@ -16,6 +15,7 @@ import { Button } from "@mui/material";
 import PlanBenefitsnew from "../PlanBenefitsnew";
 import PlanHighlights from "../PlanHighlights";
 import clsx from "clsx";
+import SliderCard from "./SliderCard";
 
 const SliderPage = ({
   data,
@@ -76,7 +76,7 @@ const SliderPage = ({
   return (
     <div className="w-full">
       <TabHeader data={tabData} />
-      <div className=" mt-[34px] mx-[8px]">
+      <div className="mt-[14px] mx-[8px]">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -95,22 +95,17 @@ const SliderPage = ({
             prevEl: ".swiper-button-prev",
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="swiper_container !rounded-[16px] max-w-[420px] w-full "
+          className="swiper_container !rounded-[16px] w-[90%] py-[10px]"
         >
           {data.map((item: any) => (
-            <SwiperSlide className="min-w-[500px] w-[70%] !rounded-[16px]">
-              {/* <SliderCard /> */}
-              <div className="flex justify-center items-center">
-                <img src={item.image} />
-              </div>
+            <SwiperSlide className="min-w-[300px] w-[86%] !rounded-[8px] shadow-[0px_1.105px_8.837px_2.209px_rgba(0,0,0,0.25)]">
+              <SliderCard image={item.image} />
             </SwiperSlide>
           ))}
         </Swiper>
 
         {/* PlanBenefits */}
-
         <PlanBenefits isHeading="PULP HEALTH PLAN" justPrice="₹11,000/Year  " />
-
         {pathname === "/plans" && (
           <div className="space-x-4  flex justify-center items-center ">
             <Button
@@ -140,12 +135,10 @@ const SliderPage = ({
               )}
               variant={"contained"}
               style={{
-                // height: "39px",
                 marginTop: "40px",
                 gap: "10px",
                 fontWeight: "500",
                 fontSize: "12px",
-                // width: "162px",
                 borderRadius: "21px",
               }}
             >
@@ -172,7 +165,6 @@ const SliderPage = ({
             </Button>
           </div>
         )}
-
         {show === 1 && (
           <>
             <PlanBenefitsnew priceworth="₹17,000/-" isHeading="Plan Benefits" />
@@ -200,7 +192,6 @@ const SliderPage = ({
             />
           </>
         )}
-
         {show === 1 && (
           <>
             <PlanDetailService
