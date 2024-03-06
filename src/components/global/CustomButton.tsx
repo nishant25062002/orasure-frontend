@@ -6,7 +6,7 @@ const CustomButton = ({
   text,
   cancel = false,
   type = "",
-  clickfunction = () => {},
+  clickfunction = () => { },
 }: {
   customStyle?: string;
   text: string;
@@ -38,6 +38,7 @@ const CustomButton = ({
   return (
     <div className={customStyle}>
       <Button
+        type={"submit"}
         onClick={clickfunction}
         variant={"contained"}
         style={{

@@ -4,7 +4,7 @@ import PlanPage from "./components/plan/PlanPage";
 import PaymentPage from "./components/payment/PaymentPage";
 import TreatmentPage from "./components/treatment/TreatmentPage";
 import DentalRecord from "./components/Record/DentalRecord";
-import DetailForm from "./components/user/DetailForm";
+import DetailForm from "./components/auth/DetailForm";
 import FindClinic from "./components/findclinic/FindClinic";
 import ClinicDetailPage from "./components/findclinic/ClinicDetailPage";
 import OfferPage from "./components/offers/OfferPage";
@@ -15,14 +15,9 @@ import ComparePlan from "./components/plan/compare/ComparePlan";
 import PaymentPortal from "./components/payment/PaymentPortal";
 import Scanner from "./components/QR/Scanner";
 import TokenTransfer from "./components/token/TokenTransfer";
-import Login from "./components/global/Login/Login";
-import Signup from "./components/doctor/Signup/Signup";
-import TicketPage from "./components/doctor/Ticket/TicketPage";
-import DoctorOfferPage from "./components/doctor/Offer/OfferPage";
-import TermsPage from "./components/doctor/Offer/Cards/TermsPage";
-import CardDetails from "./components/doctor/Ticket/Cards/CardDetails";
+import Login from "./components/auth/Login";
 
-function App() {
+const App = () => {
   const [path, setPath] = useState("");
 
   const scrollTop = () => {
@@ -45,6 +40,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Login signup />} />
+            <Route path="/create-account" element={<DetailForm />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/offers" element={<OfferPage />} />
             <Route path="/offer-details" element={<OfferDetails />} />
@@ -58,12 +55,6 @@ function App() {
             <Route path="/payment/*" element={<PaymentPage />} />
             <Route path="/payment-portal" element={<PaymentPortal />} />
             <Route path="/records" element={<DentalRecord />} />
-            <Route path="/user-signup" element={<DetailForm />} />
-            <Route path="/doctor-signup" element={<Signup />} />
-            <Route path="/doctor-ticket" element={<TicketPage />} />
-            <Route path="/doctor-offer/*" element={<DoctorOfferPage />} />
-            <Route path="/doctor-offer-terms" element={<TermsPage />} />
-            <Route path="/doctor-ticket-detail" element={<CardDetails />} />
           </Routes>
         </div>
       </div>

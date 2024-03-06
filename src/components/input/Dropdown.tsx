@@ -6,15 +6,15 @@ const Dropdown = ({
   options = [],
   selectedValue = "",
   placeholder = "",
-  setSelectedValue,
+  onChange,
 }: {
   fieldName?: string;
   options?: string[];
   selectedValue?: string;
-  setSelectedValue: any;
+  onChange: any;
   placeholder?: string;
 }) => {
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -23,7 +23,7 @@ const Dropdown = ({
   };
 
   const handleOptionClick = (option: string) => {
-    setSelectedValue(option);
+    onChange(option);
     setIsOpen(false);
   };
 

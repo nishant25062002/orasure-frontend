@@ -3,12 +3,12 @@ import React from "react";
 const TextArea = ({
   fieldName,
   value = "",
-  setValue,
+  onChange,
   placeholder = "Type...",
 }: {
   fieldName: string;
   value?: string;
-  setValue: any;
+  onChange: any;
   type?: string;
   placeholder?: string;
 }) => {
@@ -20,7 +20,7 @@ const TextArea = ({
       <textarea
         placeholder={placeholder}
         defaultValue={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => onChange(e.target.value)}
         className="text-[rgba(0,0,0,0.25)] text-[14px] font-[400] leading-[22px] p-[5px_12px] outline-none rounded-[2px] border-[1px] border-[#D9D9D9] w-full mt-[5px] h-[86px] resize-none"
       />
     </div>
